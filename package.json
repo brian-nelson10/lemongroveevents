@@ -4,14 +4,12 @@
   "private": false,
   "homepage": "https://brian-nelson10.github.io/lemongroveevents/",
   "dependencies": {
-    "@apollo/client": "^3.7.5",
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "dayjs": "^1.11.7",
     "framer-motion": "^8.5.5",
-    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.5.6",
@@ -48,6 +46,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^4.0.0"
   }
 }
