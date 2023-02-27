@@ -2,7 +2,7 @@
   "name": "lemongroveevents",
   "version": "2.0.0",
   "private": false,
-  "homepage": "https://brian-nelson10.github.io/lemongroveevents/",
+  "homepage": "https://brian-nelson10.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",

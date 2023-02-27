@@ -17,7 +17,7 @@ function AnimatedRoutes() {
            
 <Routes location={location} key={location.pathname}>
             <Route
-              path="/"
+              exact path="/"
               element={<Home/>}
               />
               <Route
