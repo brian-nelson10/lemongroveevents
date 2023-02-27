@@ -4,14 +4,11 @@ import AnimatedRoutes from './components/AnimatedRoutes';
 import ScrollTop from './components/ScrollTop';
 
 function App() {
-
   return (
-    
       <Router >
         <ScrollTop />
         <AnimatedRoutes />
       </Router>
-    
   );
 }
 
