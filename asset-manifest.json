@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lemongroveevents/static/css/main.81b0f14a.css",
-    "main.js": "/lemongroveevents/static/js/main.f9c24927.js",
+    "main.js": "/lemongroveevents/static/js/main.755423bb.js",
     "static/media/stock.jpeg": "/lemongroveevents/static/media/stock.b4aad02892471d58ff48.jpeg",
     "static/media/lemonWhole.png": "/lemongroveevents/static/media/lemonWhole.d00ba40b4a8a80a49a9f.png",
     "static/media/1.png": "/lemongroveevents/static/media/1.5d81d94221d81f2a0938.png",
@@ -19,10 +19,10 @@
     "static/media/social-media-arrow.svg": "/lemongroveevents/static/media/social-media-arrow.ecc0133cf2e7911d4b7286c107f982ec.svg",
     "static/media/arrow.svg": "/lemongroveevents/static/media/arrow.fdab8e6c7e36d62fa8e3bc6d0fef3d26.svg",
     "main.81b0f14a.css.map": "/lemongroveevents/static/css/main.81b0f14a.css.map",
-    "main.f9c24927.js.map": "/lemongroveevents/static/js/main.f9c24927.js.map"
+    "main.755423bb.js.map": "/lemongroveevents/static/js/main.755423bb.js.map"
   },
   "entrypoints": [
     "static/css/main.81b0f14a.css",
-    "static/js/main.f9c24927.js"
+    "static/js/main.755423bb.js"
   ]
 }
