@@ -1,0 +1,33 @@
+.container2 {
+    transform: perspective(1px) translateZ(0) skewX(-5deg);
+    
+}
+
+.wrapper {
+    height: 4rem;
+    width: 14rem;
+    /* border: white;
+    border-style: solid; */
+}
+.container1 {
+    position: absolute;
+    left: 0;
+    height: 110%;
+    width: 110%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.loading-bar {
+    position: absolute;
+    top: calc(100% - 3px);
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+}

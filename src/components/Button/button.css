@@ -1,0 +1,30 @@
+.btn2 {
+    transform: perspective(1px) translateZ(0) skewX(-8deg);
+    box-shadow: 0 0 1px transparent;
+    border: 2.5px solid;
+    border-color: #283845;
+    font-weight: 510;
+    letter-spacing: .07em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .5s ease-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .btn {
+      display: inline-block;
+      vertical-align: middle;
+   
+      transition: .5s ease-out;
+      text-decoration: none;
+      cursor: pointer;
+    } */
+.btn2:hover {
+    background-color: #283845;
+    color: white;
+
+}

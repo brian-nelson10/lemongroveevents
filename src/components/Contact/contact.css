@@ -1,0 +1,354 @@
+.contactImg {
+    background-position: 50%;
+    height: 300px;
+    background-image: url("../../assets/images/stock.jpeg");
+}
+.blocker {
+    box-shadow: 5px 5px 10px black;
+}
+.btn-solid1 {
+    transform: perspective(1px) translateZ(0) skewX(-8deg);
+    box-shadow: 0 0 1px transparent;
+    border: 2.5px solid;
+    border-color: #283845;
+    font-weight: 510;
+    letter-spacing: .07em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    }
+    .btn1 {
+      display: inline-block;
+      vertical-align: middle;
+      transition: .5s ease-out;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn1:hover {
+      background-color: #283845 !important;
+      color: white !important;
+      
+    }
+/* backdrop-filter: blur(30px); */
+/* checkboxes */
+.checkbox {
+    --border-default: #bbbbc1;
+    --border-hover: #283845;
+    --active: #283845;
+    --active-tick: #fff;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+.checkbox svg {
+    display: block;
+    position: absolute;
+}
+.checkbox input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 10% / 10%;
+    box-shadow: inset 0 0 0 1.5px var(--border, var(--border-default));
+    background: var(--background, transparent);
+    transition: background 0.25s linear, box-shadow 0.25s linear;
+}
+.checkbox input + svg {
+    width: 61px;
+    height: 58px;
+    left: 0;
+    top: 0;
+    color: var(--active);
+}
+.checkbox input + svg .tick {
+    stroke-dasharray: 20;
+    stroke-dashoffset: var(--stroke-dashoffset, 20);
+    transition: stroke-dashoffset 0.2s;
+}
+.checkbox input + svg .tick.mask {
+    stroke: var(--active-tick);
+}
+.checkbox input + svg + svg {
+    width: 31px;
+    height: 31px;
+    fill: none;
+    stroke: var(--active);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    top: -15px;
+    right: -30px;
+    stroke-dasharray: 4.5px;
+    stroke-dashoffset: 13.5px;
+    pointer-events: none;
+    animation: var(--animation, none) 0.2s ease 0.175s;
+}
+.checkbox input:checked {
+    --background: var(--active);
+    --border: var(--active);
+}
+.checkbox input:checked + svg {
+    --stroke-dashoffset: 0;
+}
+.checkbox input:checked + svg + svg {
+    --animation: check;
+}
+.checkbox:hover input:not(:checked) {
+    --border: var(--border-hover);
+}
+@keyframes check {
+    100% {
+        stroke-dashoffset: 4.5px;
+   }
+}
+.checkbox2 {
+    --border-default: #bbbbc1;
+    --border-hover: #283845;
+    --active: #283845;
+    --active-tick: #fff;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+.checkbox2 svg {
+    display: block;
+    position: absolute;
+}
+.checkbox2 input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 10% / 10%;
+    box-shadow: inset 0 0 0 1.5px var(--border, var(--border-default));
+    background: var(--background, transparent);
+    transition: background 0.25s linear, box-shadow 0.25s linear;
+}
+.checkbox2 input + svg {
+    width: 61px;
+    height: 58px;
+    left: 0;
+    top: 0;
+    color: var(--active);
+}
+.checkbox2 input + svg .tick2 {
+    stroke-dasharray: 20;
+    stroke-dashoffset: var(--stroke-dashoffset, 20);
+    transition: stroke-dashoffset 0.2s;
+}
+.checkbox2 input + svg .tick2.mask2 {
+    stroke: var(--active-tick);
+}
+.checkbox2 input + svg + svg {
+    width: 31px;
+    height: 31px;
+    fill: none;
+    stroke: var(--active);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    top: -15px;
+    right: -30px;
+    stroke-dasharray: 4.5px;
+    stroke-dashoffset: 13.5px;
+    pointer-events: none;
+    animation: var(--animation, none) 0.2s ease 0.175s;
+}
+.checkbox2 input:checked {
+    --background: var(--active);
+    --border: var(--active);
+}
+.checkbox2 input:checked + svg {
+    --stroke-dashoffset: 0;
+}
+.checkbox2 input:checked + svg + svg {
+    --animation: check;
+}
+.checkbox2:hover input:not(:checked) {
+    --border: var(--border-hover);
+}
+@keyframes check {
+    100% {
+        stroke-dashoffset: 4.5px;
+   }
+}
+.checkbox3 {
+    --border-default: #bbbbc1;
+    --border-hover: #283845;
+    --active: #283845;
+    --active-tick: #fff;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+.checkbox3 svg {
+    display: block;
+    position: absolute;
+}
+.checkbox3 input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 10% / 10%;
+    box-shadow: inset 0 0 0 1.5px var(--border, var(--border-default));
+    background: var(--background, transparent);
+    transition: background 0.25s linear, box-shadow 0.25s linear;
+}
+.checkbox3 input + svg {
+    width: 61px;
+    height: 58px;
+    left: 0;
+    top: 0;
+    color: var(--active);
+}
+.checkbox3 input + svg .tick3 {
+    stroke-dasharray: 20;
+    stroke-dashoffset: var(--stroke-dashoffset, 20);
+    transition: stroke-dashoffset 0.2s;
+}
+.checkbox3 input + svg .tick3.mask3 {
+    stroke: var(--active-tick);
+}
+.checkbox3 input + svg + svg {
+    width: 31px;
+    height: 31px;
+    fill: none;
+    stroke: var(--active);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    top: -15px;
+    right: -30px;
+    stroke-dasharray: 4.5px;
+    stroke-dashoffset: 13.5px;
+    pointer-events: none;
+    animation: var(--animation, none) 0.2s ease 0.175s;
+}
+.checkbox3 input:checked {
+    --background: var(--active);
+    --border: var(--active);
+}
+.checkbox3 input:checked + svg {
+    --stroke-dashoffset: 0;
+}
+.checkbox3 input:checked + svg + svg {
+    --animation: check;
+}
+.checkbox3:hover input:not(:checked) {
+    --border: var(--border-hover);
+}
+@keyframes check {
+    100% {
+        stroke-dashoffset: 4.5px;
+   }
+}
+.checkbox4 {
+    --border-default: #bbbbc1;
+    --border-hover: #283845;
+    --active: #283845;
+    --active-tick: #fff;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+.checkbox4 svg {
+    display: block;
+    position: absolute;
+}
+.checkbox4 input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 10% / 10%;
+    box-shadow: inset 0 0 0 1.5px var(--border, var(--border-default));
+    background: var(--background, transparent);
+    transition: background 0.25s linear, box-shadow 0.25s linear;
+}
+.checkbox4 input + svg {
+    width: 61px;
+    height: 58px;
+    left: 0;
+    top: 0;
+    color: var(--active);
+}
+.checkbox4 input + svg .tick4 {
+    stroke-dasharray: 20;
+    stroke-dashoffset: var(--stroke-dashoffset, 20);
+    transition: stroke-dashoffset 0.2s;
+}
+.checkbox4 input + svg .tick4.mask4 {
+    stroke: var(--active-tick);
+}
+.checkbox4 input + svg + svg {
+    width: 31px;
+    height: 31px;
+    fill: none;
+    stroke: var(--active);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    top: -15px;
+    right: -30px;
+    stroke-dasharray: 4.5px;
+    stroke-dashoffset: 13.5px;
+    pointer-events: none;
+    animation: var(--animation, none) 0.2s ease 0.175s;
+}
+.checkbox4 input:checked {
+    --background: var(--active);
+    --border: var(--active);
+}
+.checkbox4 input:checked + svg {
+    --stroke-dashoffset: 0;
+}
+.checkbox4 input:checked + svg + svg {
+    --animation: check;
+}
+.checkbox4:hover input:not(:checked) {
+    --border: var(--border-hover);
+}
+@keyframes check {
+    100% {
+        stroke-dashoffset: 4.5px;
+   }
+}
+.loading-bar {
+    position: absolute;
+    top: calc(100% - 3px);
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+}
+

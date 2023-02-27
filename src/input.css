@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "Larissa";
+    src: url("../src/assets/fonts/Larissa.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../src/assets/fonts/Roboto-Thin.ttf");
+    font-display: swap;
+}
