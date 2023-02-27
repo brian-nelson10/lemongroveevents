@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/lemongroveevents/static/css/main.20822af3.css",
+    "main.js": "/lemongroveevents/static/js/main.c3b688c3.js",
+    "static/media/stock.jpeg": "/lemongroveevents/static/media/stock.b4aad02892471d58ff48.jpeg",
+    "static/media/lemonWhole.png": "/lemongroveevents/static/media/lemonWhole.d00ba40b4a8a80a49a9f.png",
+    "static/media/1.png": "/lemongroveevents/static/media/1.5d81d94221d81f2a0938.png",
+    "static/media/stock.webp": "/lemongroveevents/static/media/stock.0e0aab64ca2cb9a74e90.webp",
+    "static/media/lemonWhole.webp": "/lemongroveevents/static/media/lemonWhole.be019783bdb901d5477a.webp",
+    "static/media/lemonbw2.png": "/lemongroveevents/static/media/lemonbw2.decb4143b4ad6e69b075.png",
+    "static/media/lemonbw2.webp": "/lemongroveevents/static/media/lemonbw2.4b4b49b26c67818920a6.webp",
+    "static/media/lemonbw.png": "/lemongroveevents/static/media/lemonbw.84a58fd8f14b7060eb1c.png",
+    "static/media/lemonbw.webp": "/lemongroveevents/static/media/lemonbw.ac8250ce645368240b8c.webp",
+    "static/media/Roboto-Thin.ttf": "/lemongroveevents/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
+    "static/media/lemonbw3.png": "/lemongroveevents/static/media/lemonbw3.e4dc5e4e6891f5f5e7c5.png",
+    "static/media/lemonbw3.webp": "/lemongroveevents/static/media/lemonbw3.61b228749fcc87180a7a.webp",
+    "static/media/Larissa.ttf": "/lemongroveevents/static/media/Larissa.a7996dca4fba4399bf54.ttf",
+    "index.html": "/lemongroveevents/index.html",
+    "static/media/social-media-arrow.svg": "/lemongroveevents/static/media/social-media-arrow.ecc0133cf2e7911d4b7286c107f982ec.svg",
+    "static/media/arrow.svg": "/lemongroveevents/static/media/arrow.fdab8e6c7e36d62fa8e3bc6d0fef3d26.svg",
+    "main.20822af3.css.map": "/lemongroveevents/static/css/main.20822af3.css.map",
+    "main.c3b688c3.js.map": "/lemongroveevents/static/js/main.c3b688c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20822af3.css",
+    "static/js/main.c3b688c3.js"
+  ]
+}
