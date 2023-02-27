@@ -5,7 +5,7 @@ import ScrollTop from './components/ScrollTop';
 
 function App() {
   return (
-      <Router basename='/lemongroveevents/'>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollTop />
         <AnimatedRoutes />
       </Router>
