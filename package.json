@@ -1,8 +1,8 @@
 {
   "name": "lemongroveevents",
   "version": "2.0.0",
-  "private": true,
-  "homepage": "http://brian-nelson10.github.io/lemongroveevents/",
+  "private": false,
+  "homepage": "https://brian-nelson10.github.io/lemongroveevents/",
   "dependencies": {
     "@apollo/client": "^3.7.5",
     "@emailjs/browser": "^3.10.0",
