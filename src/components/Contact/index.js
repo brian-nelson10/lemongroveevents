@@ -286,7 +286,7 @@ const Contact = () => {
                                             </div>
                                             <div className="grow ml-6">
                                                 <p className="text-[#283845] font-bold font-larissa tracking-wide mb-1">Event.</p>
-                                                <p className="text-gray-500 font-roboto font-bold mb-1 text-sm">A curated amenity for a beach lifestyle</p>
+                                                <p className="text-gray-500 font-roboto font-bold mb-1 text-sm">Get together for an unforgettable celebration.</p>
                                                 <p className="text-[#283845] font-larissa">$400</p>
                                             </div>
                                         </div>
@@ -362,7 +362,7 @@ const Contact = () => {
                                             </div>
                                             <div className="grow ml-6">
                                                 <p className="text-[#283845] font-bold font-larissa tracking-wide mb-1">Add On's.</p>
-                                                <p className="text-gray-500 font-roboto font-bold mb-1 text-sm">Curated Amenities for a Beach Lifestyle</p>
+                                                <p className="text-gray-500 font-roboto font-bold mb-1 text-sm">Customize your experience.</p>
                                                 <p className="text-[#283845] font-larissa">$$$</p>
                                             </div>
                                         </div>

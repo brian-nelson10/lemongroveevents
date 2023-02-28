@@ -95,7 +95,7 @@ const PackageThree= () => {
     <div class="mb-12 lg:mb-0">
    
       <div
-        className="block rounded-lg shadow-[0_35px_80px_1px_#283845] shadow-lg px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
+        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] shadow-lg px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
         style={{ background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}
       >
       <h3 class="text-[2rem] text-[#283845] font-roboto mb-6">Give your partner the proposal of their dreams, a moment you will never forget.</h3>
