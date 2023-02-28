@@ -7,7 +7,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 larissa: ['Larissa', 'cursive'],
-                roboto: ['Roboto', 'sans-serif']
+                roboto: ['Roboto', 'sans-serif'],
+                tomatoes: ['Tomatoes-O8L8', 'sans-serif']
             },
             fontSize: {
                 'xlxl': '14rem'

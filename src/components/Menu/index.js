@@ -24,7 +24,7 @@ const Menu = () => {
     return (
         <>
             <br /><br />
-            <section className="container bg-[#efe5dc] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] -mb-[10rem] mt-[3rem] relative mx-auto items-center justify-center text-center h-[75rem] w-screen ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50 menu-img">
+            <section className="container bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] -mb-[10rem] mt-[3rem] relative mx-auto items-center justify-center text-center h-[75rem] w-screen ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50 menu-img">
                 <motion.div
                     variants={pack}
                     initial="initial"

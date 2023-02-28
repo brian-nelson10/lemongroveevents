@@ -6,7 +6,7 @@ const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: {  staggerChildren: .09, delayChildren: 1.6 * i },
+      transition: {  staggerChildren: .1, delayChildren: .5 * i },
     }),
   };
 // Variants for each letter
@@ -41,7 +41,7 @@ export default function SuccessTxt({text}) {
     return (
         <>
     <motion.div
-    className="text-xl justify-start text-start items-center pl-4 pt-5 md:text-4xl"
+    className="text-[2rem] justify-start text-start items-center pt-5 md:text-[5rem]"
      variants={container}
      initial="hidden"
      animate="visible"

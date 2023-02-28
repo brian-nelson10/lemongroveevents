@@ -11,3 +11,7 @@
     src: url("../src/assets/fonts/Roboto-Thin.ttf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Tomatoes-O8L8";
+    src: url("../src/assets/fonts/Tomatoes-O8L8.ttf");
+}

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./home.css";
-import Lemon from "../components/Lemon";
+import Lemon2 from "../components/Lemon/lemonTwo.js";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 const main = {
     initial: {
@@ -78,7 +79,7 @@ const PackageThree= () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="mx-[2rem] mt-[7rem] -mb-[11rem] z-40">
+            className="mx-[2rem] mt-[7rem] -mb-[16rem] z-40">
         <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img">
   <motion.div 
     variants={pack}
@@ -89,20 +90,20 @@ const PackageThree= () => {
   </motion.div>
 </section>
 <section>
-<section class="mb-32 text-gray-800">
-<div class="container mx-auto xl:px-32 text-center lg:text-left">
-  <div class="grid lg:grid-cols-2 flex items-center">
-    <div class="mb-12 lg:mb-0">
+<section className="mb-32 text-gray-800">
+<div className="container mx-auto xl:px-32 text-center lg:text-left">
+  <div className="grid lg:grid-cols-2 flex items-center">
+    <div className="mb-12 lg:mb-0">
    
       <div
-        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] shadow-lg px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
+        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
         style={{ background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}
       >
       <h3 class="text-[2rem] text-[#283845] font-roboto mb-6">Give your partner the proposal of their dreams, a moment you will never forget.</h3>
       <h5 class="text-xl text-[#283845] font-roboto font-bold tracking-wide ml-1 lg:mb-5 xl:mb-3">Let's make this a memory you'll relish forever.</h5>
 <div className="grid grid-cols-3">
     <div className="col-span-3">
-      <p class="font-bold text-end font-larissa text-[4rem] text-[#283845] tracking-widest -mt-[2rem] -mb-4 justify-start">I do.</p>
+      <p className="font-bold text-end font-larissa text-[4rem] text-[#283845] tracking-widest -mt-[2rem] -mb-4 justify-start">I do.</p>
       </div>
       </div>
       <ul className="z-60 mx-4">
@@ -140,7 +141,7 @@ const PackageThree= () => {
     </div>
     <div>
       <div
-        class="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed bg-center bg-cover custom-img"
+        className="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed bg-center bg-cover custom-img"
         alt=""
       />
     </div>
@@ -148,11 +149,13 @@ const PackageThree= () => {
 </div>
 </section>
 </section>
-<section className="grid -mt-[22rem] -ml-[3rem] mb-[9rem] z-50">
+<section className="grid -mt-[22rem] -ml-[3rem] mb-[9rem] z-10">
     <br/>
+    <LazyLoadComponent>
     <div className="grid z-40" >
-    <Lemon />
+    <Lemon2 />
     </div>
+    </LazyLoadComponent>
 </section>
 <hr className="border-[#283845]"/>
 <div className="grid grid-cols-2 mt-[5rem] z-50">
@@ -170,7 +173,9 @@ const PackageThree= () => {
       </div>
     </div>
         </motion.main>
+        <LazyLoadComponent>
         <Footer/>
+        </LazyLoadComponent>
         </>
     );
 };

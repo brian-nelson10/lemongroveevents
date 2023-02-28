@@ -67,8 +67,8 @@ const Contact = () => {
     }
 
     return (
-        <div className="container contactBody mt-[18rem] mb-100px] w-max drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
-            <section className="container contactImg relative mx-auto items-center justify-center text-center h-[20rem] w-max ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50"
+        <div className="container contactBody mt-[18rem] mb-[80px] w-max ">
+            <section className="container shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] contactImg relative mx-auto items-center justify-center text-center h-[20rem] w-max ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50"
             >
                 <motion.div
                     variants={pack}
@@ -85,7 +85,7 @@ const Contact = () => {
                     We Will Contact You Momentarily To Complete Booking.
                 </motion.div>
                 <div className="container text-gray-800 mt-[6rem] px-4 md:px-12">
-                    <div className="block blocker rounded-lg shadow-xl py-10 md:py-12 px-2 md:px-6 -mt-[100px] bg-[#efe5dc]">
+                    <div className="block blocker rounded-lg shadow-xl py-10 md:py-12 px-2 md:px-6 -mt-[100px] bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.3)]">
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="flex flex-wrap">
                             <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">

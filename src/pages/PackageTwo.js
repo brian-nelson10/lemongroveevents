@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./home.css";
-import Lemon from "../components/Lemon";
+import Lemon2 from "../components/Lemon/lemonTwo.js";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 const main = {
     initial: {
@@ -78,7 +79,7 @@ const PackageTwo= () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="mx-[2rem] mt-[7rem] -mb-[11rem] z-40">
+            className="mx-[2rem] mt-[7rem] -mb-[16rem] z-40">
         <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img">
   <motion.div 
     variants={pack}
@@ -95,7 +96,7 @@ const PackageTwo= () => {
     <div className="mb-12 lg:mb-0">
    
       <div
-        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] shadow-lg px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
+        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
         style={{ background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}
       >
       <h3 className="text-[2rem] text-[#283845] font-roboto mb-3">Birthday, Mother's Day, Bridal Shower or just cause you're sassy and fun.</h3>
@@ -135,9 +136,9 @@ const PackageTwo= () => {
         </li>
       </ul>
       <div className="grid grid-cols-4 gap-4">
-        {/* <div className="grid z-50 text-center "> */}
+         <div className="grid z-50 text-center "> 
             <Button children="Book Now" onClick={handleBook} />
-        {/* </div> */}
+         </div> 
       </div>
       </div> 
     </div>
@@ -151,11 +152,13 @@ const PackageTwo= () => {
 </div>
 </section>
 </section>
-<section className="grid -mt-[22rem] -ml-[3rem] mb-[9rem] z-50">
+<section className="grid -mt-[22rem] -ml-[3rem] mb-[9rem] z-10">
     <br/>
-    <div className="grid z-40" >
-    <Lemon />
+    <LazyLoadComponent>
+    <div className="grid z-10" >
+    <Lemon2 />
     </div>
+    </LazyLoadComponent>
 </section>
 <hr className="border-[#283845]"/>
 <div className="grid grid-cols-2 mt-[5rem] z-50">
@@ -173,7 +176,9 @@ const PackageTwo= () => {
       </div>
     </div>
         </motion.main>
+        <LazyLoadComponent>
         <Footer/>
+        </LazyLoadComponent>
         </>
     );
 };
