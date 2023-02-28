@@ -10,8 +10,8 @@ export default function HeroText() {
             pathLength: 2,
             fillOpacity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, .1, .1, .2, .3, .4, .5, .6, .8, .9, 1],
             transition: {
-                duration: 3,
-                delay: 1.5,
+                duration: 2.1,
+                delay: 1.2,
                 ease: "easeIn"
             }
         }

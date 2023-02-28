@@ -2,7 +2,6 @@ import React from "react";
 import "./home.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import Hero from "../assets/images/stock.jpeg";
 import Hero1 from "../components/BackgroundImage";
 import HeroText from "../components/HeroText";
 import Navbar from "../components/Navbar";
@@ -75,9 +74,7 @@ export default function Home() {
                 style={{backgroundImage: `url(${Hero1})`}}
                 className='w-screen h-screen flex flex-wrap absolute'>
              <div className={show ? "invisible navi" : "navi z-30"}> 
-            
                <Navbar text="Lemon Grove"/> 
-               
                </div> 
               <div className="heroContainer items-center justify-center md:flex flex-wrap">
                 <Hero1 className="w-screen h-screen z-10 overflow-hidden"/>
