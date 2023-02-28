@@ -25,3 +25,9 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .break {
+    color: black;
+    background-color: black;
+    border-color: black;
+  }

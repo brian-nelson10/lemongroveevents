@@ -12,7 +12,7 @@ import PropTypes from "prop-types";
 function Button(props) {
     const {children, onClick} = props;
     return (
-        <div className="btn2 hover:cursor-pointer" onClick={onClick}>
+        <div className="btn2 hover:cursor-pointer z-60" onClick={onClick}>
             {children}
         </div>
     )

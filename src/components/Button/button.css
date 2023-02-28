@@ -12,7 +12,7 @@
     vertical-align: middle;
     transition: .5s ease-out;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 /* .btn {

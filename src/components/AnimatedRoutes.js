@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import Test from '../pages/Test';
 import { AnimatePresence } from 'framer-motion';
@@ -15,9 +15,9 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence exitBeforeEnter>
            
-<Switch location={location} key={location.pathname}>
+<Routes location={location} key={location.pathname}>
             <Route
-              path="/"
+               path="/"
               exact element={<Home/>}
               />
               <Route
@@ -53,7 +53,7 @@ function AnimatedRoutes() {
                 path="/Test"
                 element={<Test/>}
                 />
-          </Switch>
+          </Routes>
          
           </AnimatePresence>
     )
