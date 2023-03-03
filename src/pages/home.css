@@ -1,27 +1,73 @@
 .navi {
-    transition: all ease
+  transition: all ease
 }
 
 .linksP {
-    display: inline-block;
-    position: relative;
-    color: black;
-  }
-  
-  .linksP::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .linksP:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.linksP::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.linksP:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.book-img {
+  background-image: url('../assets/images/floral.jpg');
+}
+
+.date-img {
+  background-image: url('../assets/images/dateResize.png');
+  background-position: 90% bottom;
+  background-size: 900px;
+ 
+}
+
+.date-head {
+  background-image: url('../assets/images/floral.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.event-img {
+  background-image: url('../assets/images/event.jpg');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.event-head {
+  background-image: url('../assets/images/floralResize.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.ido-img {
+  background-image: url('../assets/images/marry.png');
+  background-position: 86%;
+  background-size: 900px;
+ 
+}
+
+.ido-head {
+  background-image: url('../assets/images/champagne.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 210%;
+  background-size: cover;
+}

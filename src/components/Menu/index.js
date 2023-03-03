@@ -24,7 +24,7 @@ const Menu = () => {
     return (
         <>
             <br /><br />
-            <section className="container bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] -mb-[10rem] mt-[3rem] relative mx-auto items-center justify-center text-center h-[75rem] w-screen ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50 menu-img">
+            <section className="container bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] -mb-[10rem] mt-[3rem] mx-auto items-center justify-center text-center h-[75rem] w-screen ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50 menu-img">
                 <motion.div
                     variants={pack}
                     initial="initial"
@@ -32,16 +32,15 @@ const Menu = () => {
                     className="p-5 font-larissa text-[5rem] text-[#283845] tracking-wide">
                     Pricing Plans
                 </motion.div>
-                
                 <motion.div
                     variants={pack}
                     initial="initial"
                     whileInView="animate"
-                    className="font-roboto text-[2rem] mb-6 -mt-7 text-[#283845] tracking-widest">
+                    className="font-roboto font-bold text-[3rem] mb-6 -mt-7 text-[#283845] tracking-widest">
                     Let us deliver your perfect day.
                 </motion.div>
-                <hr className="top-2 border-[#283845] border-solid"/>
-                <div className="container my-20 px-6 mx-auto">
+                {/* <hr className="top-2 border-[#283845] border-solid"/> */}
+                <div className="container my-20 px-6 mx-auto text-xl">
                     <div className="grid lg:grid-cols-3 gap-6 lg:gap-x-12">
                         <div className="mb-6 lg:mb-0">
                             <div className="block border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5] rounded-lg shadow-lg bg-white h-[40rem]">
@@ -124,7 +123,7 @@ const Menu = () => {
                                         <strong>I do.</strong>
                                     </p>
                                     <h3 className="text-2xl  font-larissa mb-6">
-                                        <strong>$ 300</strong>
+                                        <strong>$ 400</strong>
                                         
                                     </h3>
                                     <div >
@@ -135,6 +134,15 @@ const Menu = () => {
                                 </div>
                                 <div className="p-6 container flex pt-6 items-center justify-center text-center">
                                     <ol className="list-inside mt-8">
+                                    <li className="mb-4 flex items-center font-roboto font-bold tracking-wide">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                                                className="text-[#283845] w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                                </path>
+                                            </svg>Complimentary Champagne
+                                        </li>
                                         <li className="mb-4 flex items-center font-roboto font-bold tracking-wide">
                                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
                                                 className="text-[#283845] w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +306,7 @@ const Menu = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mb-6 mt-2 z-50 lg:mb-0 ">
+                    <div className="mb-6 mt-2 z-50 lg:mb-6">
                             <div className="block rounded-lg shadow-lg bg-white h-[20rem] border-spacing-[3rem] border-seperate border-2 border-solid border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
                                 <div className="p-6 border-b border-gray-300 text-center">
                                     <p className="uppercase mb-4 text-lg tracking-widest font-larissa">

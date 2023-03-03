@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./home.css";
-import Contact from "../components/Contact";
 import Lemon from "../components/Lemon";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import lemon from "../assets/images/lemonbw2.png";
-import Button from "../components/Button";
+// import Button from "../components/Button";
+import Image from "../components/Image";
+import champagneWeb from "../assets/images/web/champagne.webp";
+import champagne from "../assets/images/champagne.jpg";
+import floralWeb from "../assets/images/web/floral.webp";
+import floral from "../assets/images/floral.jpg";
+import grazerWeb from "../assets/images/web/grazer.webp";
+import grazer from "../assets/images/grazer.jpeg";
+import hotelWeb from "../assets/images/web/hotel.webp";
+import hotel from "../assets/images/hotel.png";
+
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 const main = {
     initial: {
@@ -51,19 +60,19 @@ const AddOns= () => {
      React.useState(() => {
       typeof windows !== "undefined" && window.scrollTo(0, 0);
     }, []);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [color, setColor] = useState(false)
     const changeColor = () => {
-      if (window.scrollY >= 675) {
+      if (window.scrollY >= 700) {
         setColor(true)
       } else {
         setColor(false)
       }
     }
     window.addEventListener('scroll', changeColor)
-    function handleAddOns() {
-        navigate("/addons");
-    };
+    // function handleAddOns() {
+    //     navigate("/addons");
+    // };
     return (
         <>
         <div className={color ? "z-50 fixed top-0 transition-ease hidden" : "z-50 fixed top-0 transition-ease visible"}>
@@ -84,7 +93,63 @@ const AddOns= () => {
   Add On's 
   </motion.div>
 </section>
-<section>
+<section className="text-center font-roboto font-bold tracking-wide text-[#283845] mt-6 -mb-14">
+
+<div className="text-[3rem] font-larissa">Customize your package.</div>
+
+<div className="text-[1.5rem] -mt-2">If you have a special vision, we will deliver your special day.</div>
+<hr className="mt-6"/>
+</section>
+<section className="overflow-hidden text-bold tracking-wide text-xl text-[#283845] ">
+  <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+    <div className="-m-1 flex flex-wrap md:-m-2">
+      <div className="flex w-1/2 flex-wrap">
+        <div className="-mb-[6rem] p-1 md:p-2">
+          <Image
+            srcset={grazerWeb}
+            fallback={grazer}
+            alt="grazer table"
+            className="block h-full w-full rounded-lg object-cover object-center"/>
+          <div className="mt-6 font-larissa font-bold text-xl">Charcuterie Grazing Table.</div>
+        </div>
+        {/* <div className="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            className="block h-full w-full rounded-lg object-cover object-center"
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />d
+        </div> */}
+        <div className="w-full p-1 md:p-2">
+          <Image
+            srcset={champagneWeb}
+            fallback={champagne}
+            alt="bubbles of champagne"
+            className="block h-full w-full rounded-lg object-cover object-center"/>
+            <div className="mt-6 font-larissa font-bold text-xl ">Champagne.</div>
+        </div>
+      </div>
+      <div className="flex w-1/2 flex-wrap">
+        <div className="w-full p-1 md:p-2">
+        <Image
+            srcset={floralWeb}
+            fallback={floral}
+            alt="floral arrangement"
+            className="block h-full w-full rounded-lg object-cover object-center"/>
+            <div className="mt-6 font-larissa font-bold text-xl text-end">Floral Arrangements.</div>
+        </div>
+        <div className="-mb-[6rem] p-1 md:p-2">
+        <div className="mb-6 font-larissa font-bold text-xl">Custom Hotel Parties.</div>
+          <Image
+            srcset={hotelWeb}
+            fallback={hotel}
+            alt="grazer table"
+            className="block h-full w-full rounded-lg object-cover object-center"/>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{/* <section>
 <section class="mb-32 text-gray-800">
 <div class="container mx-auto xl:px-32 text-center lg:text-left">
   <div class="grid lg:grid-cols-2 flex items-center">
@@ -143,19 +208,21 @@ const AddOns= () => {
   </div>
 </div>
 </section>
-</section>
-<section className="grid -mt-[22rem] -ml-[3rem] mb-[9rem] z-50">
-    <div className=" z-50" >
-    <Contact />
-    </div>
+</section> */}
+
+<section className="grid -mt-[22rem] -ml-[3rem] mb-[9rem] z-40">
     <br/>
+    <LazyLoadComponent>
     <div className="grid z-40" >
     <Lemon />
     </div>
+    </LazyLoadComponent>
 </section>
 <br/>
         </motion.main>
+        <LazyLoadComponent>
         <Footer/>
+        </LazyLoadComponent>
         </>
     );
 };

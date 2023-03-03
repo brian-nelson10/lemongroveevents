@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import icon from "../../../assets/images/lemonbw.png";
 import iconWeb from "../../../assets/images/web/lemonbw.webp";
 import Button from "../../Button";
-import BackgroundImage from "../../BackgroundImage";
 import Image from "../../Image";
+import dateWeb from "../../../assets/images/web/date.webp";
+import date from "../../../assets/images/date.jpg";
 const SectionTwo = () => {
     const navigate = useNavigate();
     function handlePackageDetails() {
@@ -18,7 +19,12 @@ const SectionTwo = () => {
                     <div className="grid grid-cols-2 w-full gap-4 items-center justify-center">
                         <div className="mb-4 pl-8 justify-center items-center">
                             <motion.div layout className="zoomin frame flex flex-wrap container ml-[4rem] justify-center items-center">
-                                 <BackgroundImage className="img w-[1400px] h-[480px] z-10" /> 
+                                <Image
+                                    className="img w-[1500px] h-[480px] z-10"
+                                    srcset={dateWeb}
+                                    fallback={date}
+                                    alt="date package photo"/>
+                                 {/* <BackgroundImage className="img w-[1400px] h-[480px] z-10" />  */}
                             </motion.div>
                         </div>
                         <div className="grid-cols-1 gap-4 ml-2 mr-[4rem] justify-end items-end text-end -mt-16">

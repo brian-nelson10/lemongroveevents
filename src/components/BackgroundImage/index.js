@@ -1,6 +1,6 @@
 import React from "react";
-import bgImgJpeg from "../../assets/images/stock.jpeg";
-import bgImgWeb from "../../assets/images/web/stock.webp";
+import bgImgJpeg from "../../assets/images/event.jpg";
+import bgImgWeb from "../../assets/images/web/event.webp";
 
 export default function BackgroundImage() {
     return(

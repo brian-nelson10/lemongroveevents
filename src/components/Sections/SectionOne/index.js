@@ -6,7 +6,7 @@ import SectionThree from "../SectionThree";
 import Footer from "../../Footer";
 import SectionFour from "../SectionFour";
 import Menu from "../../Menu";
-import Contact from "../../Contact";
+// import Contact from "../../Contact";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 // import BackgroundImage from "../../BackgroundImage";
 
@@ -84,7 +84,9 @@ const SectionOne = () => {
     <>
 <br/><br/><br/><br/>
 
-<motion.section layout className="container mt-[2rem] flex items-center justify-center h-[30%] m-auto -mb-10 bg-fixed bg-center bg-cover rounded-xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img"
+<motion.section 
+    layout 
+    className="container mt-[2rem] flex items-center justify-center h-[30%] m-auto -mb-10 bg-fixed bg-center bg-cover rounded-xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img"
 >
   <motion.div
     layout
@@ -132,21 +134,22 @@ whileInView="onscreen">
 </motion.section>
 <br/>
 {/* <Lemon2/> */}
-<motion.section
+{/* <motion.section
 layout
 variants={content}
 viewport={{ once: true }}
 initial="offscreen"
-whileInView="onscreen">
+whileInView="onscreen"
+className="z-50 mb-[2rem]">
     <Contact/>
-</motion.section>
+</motion.section> */}
 <motion.div 
     layout
     variants={content3}
     viewport={{ once: true }}
     initial="offscreen"
     whileInView="onscreen"
-    className="mt-[100px] bottom-0">
+    className="z-10 bottom-0">
  <Footer/>
 </motion.div>
     </>

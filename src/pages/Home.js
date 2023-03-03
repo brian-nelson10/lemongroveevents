@@ -72,12 +72,12 @@ export default function Home() {
             </motion.div>
               <section
                 style={{backgroundImage: `url(${Hero1})`}}
-                className='w-screen h-screen flex flex-wrap absolute'>
+                className='w-full h-full flex flex-wrap absolute'>
              <div className={show ? "invisible navi" : "navi z-30"}> 
                <Navbar text="Lemon Grove"/> 
                </div> 
               <div className="heroContainer items-center justify-center md:flex flex-wrap">
-                <Hero1 className="w-screen h-screen z-10 overflow-hidden"/>
+                <Hero1 className="w-screen h-[10rem] z-10 overflow-hidden"/>
                 <div className="top-2/4 right-2/4 left-2/4">
                     <BookButton />
                 </div>
@@ -92,13 +92,12 @@ export default function Home() {
               <SectionOne />
               </LazyLoadComponent>
               <LazyLoadComponent>
-              <section>
+              <section className="z-10">
                 <Lemon />
               </section>
               </LazyLoadComponent>
               </section>  
               </motion.section>
-              
               </motion.main>
           </>               
       </AnimatePresence>

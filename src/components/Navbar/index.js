@@ -80,8 +80,8 @@ export default function Navbar({ text }) {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 2,
-        duration: 2.5,
+        delay: 1,
+        duration: 2,
         ease: [0.6, -0.05, 0.01, 1.5],
       },
     },
@@ -120,7 +120,7 @@ export default function Navbar({ text }) {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: .08, delayChildren: 1.4 * i },
+      transition: { staggerChildren: .08, delayChildren: 1.1 * i },
     }),
   };
   // Variants for each letter
@@ -263,8 +263,8 @@ export default function Navbar({ text }) {
   }
   return (
     <>
-      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white opacity-[80%] fixed flex flex-wrap w-screen -mt-6 p-1 pt-2 z-50 hover:cursor-pointer md:p-4' : 'navbar z-60 bg-transparent fixed flex flex-wrap w-screen p-1 pt-2 z-50 hover:cursor-pointer md:p-4'}>
-        <div className="grid grid-cols-3 w-screen ">
+      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white opacity-[80%] fixed flex flex-wrap w-screen -mt-6 p-1 pt-2 z-50 hover:cursor-pointer md:p-4' : 'navbar z-60 bg-transparent fixed md:flex md:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer md:p-4'}>
+        <div className="grid grid-cols-3 w-[26rem] md:w-screen my-2">
           <motion.div
             layout
             className="text-xl justify-start text-start items-center pl-4 pt-5 md:text-4xl"
@@ -281,7 +281,7 @@ export default function Navbar({ text }) {
           <motion.div
             layout
             variants={links}
-            className="font-larissa text-black text-center text-xl items-center pt-6 justify-center md:text-3xl">
+            className="invisible md:visible font-larissa text-black text-center text-xl items-center pt-6 justify-center md:text-3xl">
             <motion.span onClick={handleHome} className="mx-4 links">Home</motion.span>
             <motion.button
               onClick={() => setIsHover(!isHover)}
@@ -289,14 +289,14 @@ export default function Navbar({ text }) {
             >Packages</motion.button>
             <motion.span onClick={handleNavigate} className="mx-4 links">Book Online</motion.span>
           </motion.div>
-          <motion.div className="container-fluid flex flex-wrap justify-end pr-6">
+          <motion.div className="flex-row container-fluid span-col-2 flex md:flex-wrap justify-end md:pr-6">
             <motion.div
               variants={links}
-              className={isOpen ? "invisible" : "font-larissa text-[1.5rem] mt-4 mr-4"}>305-894-0900</motion.div>
+              className={isOpen ? "invisible" : "font-larissa text-xs mt-7 md:text-[1.5rem] md:mt-4 md:mr-4"}>305-894-0900</motion.div>
             <motion.div
               layout
               //   variants={iconVariants}
-              className="container-fluid md:pr-6"
+              className="md:container-fluid md:pr-6"
               animate={isOpen ? "opened" : "closed"}
               whileHover={{ scale: 1.1 }}
               onClick={() => setIsOpen(!isOpen)}
@@ -340,7 +340,8 @@ export default function Navbar({ text }) {
           </motion.div>
 
         </div>
-        <div className="container mx-auto h-0">
+        <div className="container invisible md:visible mx-auto h-0">
+          
           <motion.div layout variants={dropDown} initial={false} animate={isHover ? "opened" : "closed"} id="package" style={drop} className="ml-[39rem] relative z-70 bg-transparent divide-y divide-gray-100 text-center rounded-lg shadow-black shadow-sm w-44">
             <ul className="py-2 mt-2 text-sm ">
               <motion.li variants={linkVariants}>

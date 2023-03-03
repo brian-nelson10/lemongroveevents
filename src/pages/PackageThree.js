@@ -80,7 +80,7 @@ const PackageThree= () => {
             animate="animate"
             exit="exit"
             className="mx-[2rem] mt-[7rem] -mb-[16rem] z-40">
-        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img">
+        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] ido-head">
   <motion.div 
     variants={pack}
     initial="initial"
@@ -107,6 +107,9 @@ const PackageThree= () => {
       </div>
       </div>
       <ul className="z-60 mx-4">
+      <li className="flex items-center justify-start mb-4">
+           <p className="font-roboto text-lg font-bold text-[#283845] linksP mr-5">- Complimentary Champagne</p>
+        </li>
         <li className="flex items-center justify-start mb-4">
            <p className="font-roboto text-lg font-bold text-[#283845] linksP mr-5">- 2 Hours</p>
         </li>
@@ -129,7 +132,7 @@ const PackageThree= () => {
             <p className="font-roboto text-lg font-bold text-[#283845] linksP">- Bluetooth Speaker with your playlist</p>
         </li>
         <li className="flex items-center justify-start mb-4 ml-2">
-            <p className="font-larissa text-bold text-xl text-[#283845]">Price $300.</p>
+            <p className="font-larissa text-bold text-xl text-[#283845]">Price $ 400.</p>
         </li>
       </ul>
       <div className="grid grid-cols-4 gap-4 z-60">
@@ -141,7 +144,7 @@ const PackageThree= () => {
     </div>
     <div>
       <div
-        className="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed bg-center bg-cover custom-img"
+        className="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed ido-img"
         alt=""
       />
     </div>

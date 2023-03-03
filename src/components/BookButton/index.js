@@ -10,7 +10,7 @@ const wordVariants = {
 }
 const entry = {
     initial: {
-        y: 100,
+        y: 200,
         opacity: 0
     },
     animate: {
@@ -19,8 +19,8 @@ const entry = {
         transition: {
             type: "spring",
             bounce: .3,
-            duration: 3,
-            delay: 3
+            duration: 2,
+            delay: .6
         }
     }
 }
@@ -86,7 +86,7 @@ const BookButton = () => {
         className="absolute z-50 pt-6 upload-button hover:cursor-pointer justify-center bg-black items-center grid top-96 right-2/4 left-2/4">
       <div className="wrapper overflow-hidden cursor-pointer rounded-lg relative items-center justify-center" onClick={() => !isAnimating && animate()}>
         <motion.div 
-          className="container1 bg-transparent z-10 top-0 cursor-pointer text-white"
+          className="container1 bg-black z-10 top-0 cursor-pointer text-white"
           animate={uploadControls}
           whileHover="hovered"
         >

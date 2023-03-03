@@ -1,5 +1,7 @@
 import React from "react";
-import logo from "../../assets/images/1.png";
+import logoWeb from "../../assets/images/web/logoResize.webp";
+import logo from "../../assets/images/logoResize.png";
+import Image from "../Image";
 
 const Footer = () => {
     return (
@@ -17,8 +19,15 @@ const Footer = () => {
         </div>
     </div>
       </div>
-      <div className="col-span-8 itmes-center justify-center text-center md:col-span-3 lg:col-span-4 md:px-8 py-4 md:py-0">
-        <img className="h-[250px] w-[250px] ml-[11rem] hover:scale-150 cursor-pointer ease-in-out" alt="icon" src={logo} />
+      <div className="col-span-8 items-center justify-center text-center md:col-span-3 lg:col-span-4 md:px-8 py-4 md:py-0">
+        <div className="md:ml-[11rem]">
+        <Image
+          srcset={logoWeb}
+          fallback={logo}
+          alt="logo for lemon grove events" 
+          className="hover:scale-150 cursor-pointer transition-ease ml-[11rem]"/>
+          </div>
+        {/* <img className="h-[250px] w-[250px] md:ml-[11rem] hover:scale-150 cursor-pointer ease-in-out" alt="icon" src={logo} /> */}
       </div>
       <div className="col-span-8 md:col-span-3 lg:col-span-2 md:px-8 py-4 md:py-0">
         <h5 className="text-xl font-larissa text-gray-700">Follow us</h5>

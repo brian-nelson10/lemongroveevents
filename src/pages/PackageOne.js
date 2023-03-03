@@ -80,7 +80,7 @@ const PackageOne= () => {
             exit="exit"
             className="mx-[2rem] mt-[7rem] -mb-[16rem]">
         <section 
-          className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img"
+          className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] date-head"
           >
   <motion.div 
     variants={pack}
@@ -139,7 +139,7 @@ const PackageOne= () => {
     </div>
     <div>
       <div
-        className="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed bg-center bg-cover custom-img"
+        className="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed date-img"
         alt=""
       />
     </div>

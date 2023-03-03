@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import "./home.css";
 import { motion } from "framer-motion";
-import img1 from "../assets/images/stock.jpeg";
+// import img1 from "../assets/images/event.jpg";
+// import img1Web from "../assets/images/web/event.webp";
+import img2 from "../assets/images/champagne.jpg";
+import img2Web from "../assets/images/web/champagne.webp";
+import img3 from "../assets/images/date.jpg";
+import img3Web from "../assets/images/web/date.webp";
 import Contact from "../components/Contact";
 import Lemon from "../components/Lemon";
 import Footer from "../components/Footer";
 // import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Image from "../components/Image";
 
 const main = {
     initial: {
@@ -67,7 +74,7 @@ const Book = () => {
             exit="exit"
             className="mx-[2rem] mt-[7rem] z-40">
                 
-        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-vw mb-20 bg-fixed bg-center bg-cover rounded-sm custom-img"
+        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-vw mb-20 bg-fixed bg-center bg-cover rounded-sm book-img"
 >
 
   <motion.div 
@@ -80,14 +87,25 @@ const Book = () => {
  
 </section>
 <section className="grid grid-cols-3 gap-4 mx-[5rem]">
-    <div>
-        <img className="h-[20rem] w-[40rem]" src={img1} alt=""/>
+<div>
+    <Image
+            srcset={img3Web}
+            fallback={img3}
+            />
+       
+    </div>    
+    <div className="mt-6">
+    <Image
+            srcset={img2Web}
+            fallback={img2}
+            />
     </div>
     <div>
-        <img className="h-[20rem] w-[40rem]" src={img1} alt=""/>
-    </div>
-    <div>
-        <img className="h-[20rem] w-[40rem]" src={img1} alt=""/>
+    <Image
+            srcset={img3Web}
+            fallback={img3}
+            />
+       
     </div>    
 </section>
 <hr className="mt-10"/>
