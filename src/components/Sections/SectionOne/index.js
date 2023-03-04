@@ -8,6 +8,7 @@ import SectionFour from "../SectionFour";
 import Menu from "../../Menu";
 // import Contact from "../../Contact";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
+import SectionFive from "../SectionFive";
 // import BackgroundImage from "../../BackgroundImage";
 
 const content = {
@@ -108,6 +109,7 @@ whileInView="onscreen">
     <SectionTwo />
 </motion.section>
 </LazyLoadComponent>
+<LazyLoadComponent>
 <motion.section
 layout
 variants={content2}
@@ -116,6 +118,8 @@ initial="offscreen"
 whileInView="onscreen">
     <SectionThree />
 </motion.section>
+</LazyLoadComponent>
+<LazyLoadComponent>
 <motion.section
 layout
 variants={content}
@@ -124,6 +128,18 @@ initial="offscreen"
 whileInView="onscreen">
     <SectionFour />
 </motion.section>
+</LazyLoadComponent>
+<LazyLoadComponent>
+<motion.section
+layout
+variants={content2}
+viewport={{ once: true }}
+initial="offscreen"
+whileInView="onscreen">
+    <SectionFive />
+</motion.section>
+</LazyLoadComponent>
+<LazyLoadComponent>
 <motion.section
 layout
 variants={content2}
@@ -132,6 +148,7 @@ initial="offscreen"
 whileInView="onscreen">
     <Menu />
 </motion.section>
+</LazyLoadComponent>
 <br/>
 {/* <Lemon2/> */}
 {/* <motion.section

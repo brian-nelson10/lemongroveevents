@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./home.css";
 import Lemon from "../components/Lemon";
 import Footer from "../components/Footer";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 // import Button from "../components/Button";
 import Image from "../components/Image";
@@ -84,7 +84,7 @@ const AddOns= () => {
             animate="animate"
             exit="exit"
             className="mx-[2rem] mt-[7rem] z-40">
-        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img">
+        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] addon-head">
   <motion.div 
     variants={pack}
     initial="initial"

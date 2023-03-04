@@ -23,6 +23,9 @@ export default function Navbar({ text }) {
   function handlePackageThree() {
     navigate('/ido')
   }
+  function handlePackageFour() {
+    navigate('/celebrate')
+  }
   function handleAddOns() {
     navigate('/addons')
   }
@@ -292,7 +295,7 @@ export default function Navbar({ text }) {
           <motion.div className="flex-row container-fluid span-col-2 flex md:flex-wrap justify-end md:pr-6">
             <motion.div
               variants={links}
-              className={isOpen ? "invisible" : "font-larissa text-xs mt-7 md:text-[1.5rem] md:mt-4 md:mr-4"}>305-894-0900</motion.div>
+              className={isOpen ? "invisible" : "font-larissa text-xs mt-7 md:text-[1.5rem] md:mt-7 md:mr-4"}>305-894-0900</motion.div>
             <motion.div
               layout
               //   variants={iconVariants}
@@ -352,6 +355,9 @@ export default function Navbar({ text }) {
               </motion.li>
               <motion.li variants={linkVariants}>
                 <div onClick={handlePackageThree} className="px-4 py-2 bg-[#283845] text-[#efe5dc] font-larissa text-sm hover:bg-[#efe5dc] hover:text-black">I do.</div>
+              </motion.li>
+              <motion.li variants={linkVariants}>
+                <div onClick={handlePackageFour} className="px-4 py-2 bg-[#283845] text-[#efe5dc] font-larissa text-sm hover:bg-[#efe5dc] hover:text-black">Celebrate.</div>
               </motion.li>
               <motion.li variants={linkVariants}>
                 <div onClick={handleAddOns} className="px-4 py-2 bg-[#283845] text-[#efe5dc] font-larissa text-sm hover:bg-[#efe5dc] hover:text-black">Add-Ons</div>

@@ -174,25 +174,9 @@ const Contact = () => {
                 transition
                 ease-in-out
                 m-0
-                focus:text-[#283845] focus:bg-white focus:border-[#283845] focus:outline-none" rows="3" placeholder="Message">
+                focus:text-[#283845] focus:bg-white focus:border-[#283845] focus:outline-none" rows="3" placeholder="Leave any Details or Add On's Here!">
                 </textarea>
                                     </div>
-                                    {/* <div className="form-group form-check text-center mb-6">
-                                        <input type="checkbox" 
-                                            className="
-                  form-check-input 
-                  appearance-none h-4 w-4 
-                  border border-gray-300 
-                  rounded-sm bg-white 
-                  checked:bg-blue-600 
-                  checked:border-blue-600 
-                  focus:outline-none transition 
-                  duration-200 mt-1 align-top 
-                  bg-no-repeat bg-center bg-contain 
-                  mr-2 cursor-pointer"/>
-                                        <label className="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this
-                                            message</label>
-                                    </div> */}
                                     <div className="container mt-8 justify-center items-center">
                                         <button className="btn1 btn-solid1 btn-white1 text-[#283845] font-larissa tracking-widest font-bold border-[#283845]" >
                                         <input className="texter hover:cursor-pointer" type="submit" value="Complete Booking" onClick={() => !isAnimating && animate()}/>
@@ -202,9 +186,11 @@ const Contact = () => {
                                 {/* </form> */}
                             </div>
                             <div className="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
-                                <div className="-mt-2 mb-[2rem]">
+                                <div className="-mt-2">
                                     <span className="font-larissa text-[2.2rem]">Select Your Package</span>
-                                    
+                                </div>
+                                <div className="-mt-1 mb-[2rem] ">
+                                    <span className="font-roboto text-[1.2rem]">Please Click A Box Below to Select</span>
                                 </div>
                                 <div className="flex flex-wrap">
                                     
@@ -354,9 +340,9 @@ const Contact = () => {
                                                 </div>
                                             </div>
                                             <div className="grow ml-6">
-                                                <p className="text-[#283845] font-bold font-larissa tracking-wide mb-1">Add On's.</p>
-                                                <p className="text-gray-500 font-roboto font-bold mb-1 text-sm">Customize your experience.</p>
-                                                <p className="text-[#283845] font-larissa">$$$</p>
+                                                <p className="text-[#283845] font-bold font-larissa tracking-wide mb-1">Celebrate.</p>
+                                                <p className="text-gray-500 font-roboto font-bold mb-1 text-sm">Customize your getaway.</p>
+                                                <p className="text-[#283845] font-larissa">$250</p>
                                             </div>
                                         </div>
                                     </div>

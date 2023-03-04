@@ -34,7 +34,7 @@ const SectionFour = () => {
                             <div >
                             <Button children="Details" onClick={handlePackageDetails}/>
                             </div>
-                            <div  className="icon w-[200px] h-[180px] justify-end items-end text-end -mt-[6rem] mb-0 ml-6 rotate-[40deg]">
+                            <div  className="icon w-3/4 h-3/4 justify-end items-end text-end -mt-[8rem] -ml-16 ">
                             <Image 
                                 alt="" 
                                 src={iconWeb}

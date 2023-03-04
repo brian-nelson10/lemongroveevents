@@ -71,3 +71,24 @@
   background-position: 0 210%;
   background-size: cover;
 }
+
+.celeb-img {
+  background-image: url('../assets/images/hotel2.png');
+  background-position: 82%;
+  background-size: 780px;
+ 
+}
+
+.celeb-head {
+  background-image: url('../assets/images/flower.png');
+  background-repeat: no-repeat;
+  background-position: 0 210%;
+  background-size: cover;
+}
+
+.addon-head {
+  background-image: url('../assets/images/flower.png');
+  background-repeat: no-repeat;
+  background-position: 0 210%;
+  background-size: cover;
+}

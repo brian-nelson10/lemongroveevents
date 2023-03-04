@@ -7,6 +7,7 @@ import Book from "../pages/Book";
 import PackageOne from "../pages/PackageOne";
 import PackageTwo from "../pages/PackageTwo";
 import PackageThree from "../pages/PackageThree";
+import PackageFour from "../pages/PackageFour";
 import AddOns from "../pages/AddOns";
 import Success from "../pages/Success";
 
@@ -39,6 +40,10 @@ function AnimatedRoutes() {
                   <Route 
                 path="/ido"
                 element={<PackageThree/>}
+                />
+                  <Route 
+                path="/celebrate"
+                element={<PackageFour/>}
                 />
                 <Route 
                 path="/addons"

@@ -162,7 +162,7 @@ const PackageOne= () => {
 </svg>
 <p className="font-larissa font-bold tracking-wide text-md -mt-7 -ml-3 opacity-0 group-hover:opacity-100">Home</p>
       </div>
-      <div className="grid col-span-1 flex flex-row mr-[2rem] group justify-end" onClick={handleEvent}>
+      <div className="grid col-span-1 flex flex-row mr-[2rem] -mt-[14px] group justify-end" onClick={handleEvent}>
       <svg className="-rotate-[90deg] hover:cursor-pointer" width="36" height="66" viewBox="0 0 26 46" fill="#283845" stroke="#283845" strokeWidth="0" opacity=".9" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.2929 45.7071C7.68342 46.0976 8.31659 46.0976 8.70711 45.7071L15.0711 39.3431C15.4616 38.9526 15.4616 38.3195 15.0711 37.9289C14.6805 37.5384 14.0474 37.5384 13.6569 37.9289L8 43.5858L2.34315 37.9289C1.95263 37.5384 1.31946 37.5384 0.928936 37.9289C0.538412 38.3195 0.538412 38.9526 0.928936 39.3431L7.2929 45.7071ZM7 1.02965e-07L7 45L9 45L9 -1.02965e-07L7 1.02965e-07Z"/>
 </svg>
