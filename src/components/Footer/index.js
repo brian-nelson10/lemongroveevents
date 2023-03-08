@@ -5,7 +5,7 @@ import Image from "../Image";
 
 const Footer = () => {
     return (
-<section className="grid mt-[18rem] h-1/2 bg-gray-50 text-gray-600 px-6 lg:px-8 py-12 w-screen bottom-0 shadow-xl">
+<section className="grid mt-[18rem] md:h-1/2 bg-gray-50 text-gray-600 px-6 lg:px-8 py-12 w-screen bottom-0 shadow-xl">
   
   <div className="max-w-screen-xl mx-auto itmes-center justify-center text-center">
     <div className="grid grid-cols-6 itmes-center justify-center text-centermd:grid-cols-6 lg:grid-cols-8 divide-gray-200 divide-y-2 md:divide-x-2 md:divide-y-0 md:-mx-8">

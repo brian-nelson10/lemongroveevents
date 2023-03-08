@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
+import "./social.css";
 import SocialMediaArrow from '../../assets/images/social-media-arrow.svg';
 
 const log = {
@@ -30,9 +31,9 @@ const Social = () => {
     variants={log} 
     initial="initial"
     animate="animate"
-    className={color ? "social text-black fill-black flex flex-col gap-8 absolute right-[42.7rem] top-[7rem] w-50px " : "social fill-white stroke-white text-white flex flex-col gap-8 absolute right-[42.7rem] top-[7rem] w-50px "  }>
-            <div className="socialIndicator w-50px ">
-              <p className='text-[1.8rem] text-white tracking-[1rem] rotate-90 -translate-y-[90px] -translate-x-[75px] text-larissa'>Social</p>
+    className={color ? "social text-black fill-black flex flex-col gap-8 absolute w-50px " : "social fill-white stroke-white text-white flex flex-col gap-8 absolute w-50px "  }>
+            <div className={color ? "invisible" : "socialIndicator w-50px "}>
+              <p className='text-[1.8rem] text-white tracking-[1rem] rotate-90 -translate-y-[90px] -translate-x-[75px] text-larissa socialText'>Social</p>
               <img className='max-h-6 translate-x-[5px]' src={SocialMediaArrow} alt="icon" />
             </div>
             <div className="socialText inline-block tracking-5px text-[1.6rem] mb-[2rem] -translate-x-[1px] ">

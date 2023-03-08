@@ -87,14 +87,14 @@ const SectionOne = () => {
 
 <motion.section 
     layout 
-    className="container mt-[2rem] flex items-center justify-center h-[30%] m-auto -mb-10 bg-fixed bg-center bg-cover rounded-xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img"
+    className="container mt-[1rem] w-screen md:mt-[2rem] flex items-center justify-center h-[30%] m-0 md:m-auto -mb-10 bg-fixed bg-center bg-cover rounded-xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] custom-img"
 >
   <motion.div
     layout
     variants={pack}
     initial="initial"
     whileInView="animate"
-    className="p-5 font-larissa text-[5rem] text-white tracking-widest ">
+    className="p-5 font-larissa text-[2rem] md:text-[5rem] text-white tracking-widest ">
   The Packages.
   </motion.div>
 </motion.section>

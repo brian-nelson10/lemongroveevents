@@ -7,14 +7,26 @@ import Button from "../../Button";
 import Image from "../../Image";
 import ido from "../../../assets/images/champagne.jpg";
 import idoWeb from "../../../assets/images/web/champagne.webp";
+import SectionFourMobile from "./mobile";
 const SectionFour = () => {
     const navigate = useNavigate();
     function handlePackageDetails() {
         navigate("/ido");
     }
+    const [width, setWidth] = React.useState(window.innerWidth);
+const breakpoint = 520;
+
+React.useEffect(() => {
+  const handleWindowResize = () => setWidth(window.innerWidth)
+  window.addEventListener("resize", handleWindowResize);
+
+  // // Return a function from the effect that removes the event listener
+  // return () => window.removeEventListener("resize", handleWindowResize);
+}, []);
     return (
         <>
         <br/><br/>
+        {width < breakpoint ?  
             <section className="container flex ml-20 mx-auto w-screen textImage right parallax-elements-anim">
                     <div className="grid grid-cols-2 w-full gap-4 items-center justify-center">
                         <div className="mb-4 pl-8 justify-center items-center">
@@ -44,6 +56,7 @@ const SectionFour = () => {
                     </div>
                 </div>
         </section>
+       : <SectionFourMobile/> };
                 </>
                 )
 };

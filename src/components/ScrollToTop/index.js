@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./scroll.css";
 import Arrow from '../../assets/images/arrow.svg';
 import { motion } from "framer-motion";
 const ScrollToTop = () =>{
@@ -32,6 +33,7 @@ const scroll = {
   };
 return (
     <>
+    <div className='arrows'>
       <motion.img 
       layout
       variants={scroll}
@@ -43,8 +45,9 @@ return (
       onClick={() => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
       }}
-      className="fixed bottom-[40px] inline-block -right-5 bg-transparent h-[8%] w-[8%] hover:cursor-pointer"
+      className="fixed bottom-[40px] inline-block right-20 md:-right-5 bg-transparent h-[8%] w-[8%] hover:cursor-pointer"
       src={Arrow} alt="arrow"/>
+      </div>
   </>
 );
 }

@@ -24,19 +24,19 @@ const Menu = () => {
     return (
         <>
             <br /><br />
-            <section className="container bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] -mb-[10rem] mt-[3rem] mx-auto items-center justify-center text-center h-[100rem] w-screen ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50 menu-img">
+            <section className="container bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] -mb-[10rem] -mt-[2rem] md:mt-[3rem] md:mx-auto items-center justify-center text-center h-[200rem] md:h-[100rem] w-screen md:ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50 menu-img">
                 <motion.div
                     variants={pack}
                     initial="initial"
                     whileInView="animate"
-                    className="p-5 font-larissa text-[5rem] text-[#283845] tracking-wide">
+                    className="p-2 md:p-5 font-larissa text-[3rem] md:text-[5rem] text-[#283845] tracking-wide">
                     Pricing Plans
                 </motion.div>
                 <motion.div
                     variants={pack}
                     initial="initial"
                     whileInView="animate"
-                    className="font-roboto font-bold text-[3rem] mb-6 -mt-7 text-[#283845] tracking-widest">
+                    className="font-roboto font-bold text-[2rem] md:text-[3rem] -mb-6 md:mb-6 md:-mt-7 text-[#283845] tracking-widest">
                     Let us deliver your perfect day.
                 </motion.div>
                 {/* <hr className="top-2 border-[#283845] border-solid"/> */}
@@ -306,7 +306,7 @@ const Menu = () => {
                         </div>
                     </div>
                     <div className="mb-6 mt-2 z-50 lg:mb-6">
-                            <div className="block rounded-lg shadow-lg bg-white h-[25rem] border-spacing-[3rem] border-seperate border-2 border-solid border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
+                            <div className="block rounded-lg shadow-lg bg-white md:h-[25rem] border-spacing-[3rem] border-seperate border-2 border-solid border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
                                 <div className="p-6 border-b border-gray-300 text-center">
                                     <p className="uppercase mb-4 text-lg tracking-widest font-larissa">
                                         <strong>Celebrate.</strong>
@@ -383,7 +383,7 @@ const Menu = () => {
                             </div>
                         </div>
                     <div className="mb-6 mt-2 z-50 lg:mb-6">
-                            <div className="block rounded-lg shadow-lg bg-white h-[20rem] border-spacing-[3rem] border-seperate border-2 border-solid border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
+                            <div className="block rounded-lg shadow-lg bg-white md:h-[20rem] border-spacing-[3rem] border-seperate border-2 border-solid border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
                                 <div className="p-6 border-b border-gray-300 text-center">
                                     <p className="uppercase mb-4 text-lg tracking-widest font-larissa">
                                         <strong>Add On's</strong>

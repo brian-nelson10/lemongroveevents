@@ -2,8 +2,12 @@ import React from "react";
 import "./home.css";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Hero1 from "../components/BackgroundImage";
-import HeroText from "../components/HeroText";
+// import Hero1 from "../components/BackgroundImage";
+// import Image from "../components/Image";
+// import heroWeb from "../assets/images/web/event.webp";
+// import hero from "../assets/images/event.jpg";
+import HeroText from "../components/HeroText/index";
+import HeroTextMobile from "../components/HeroText/mobile.js";
 import Navbar from "../components/Navbar";
 import BookButton from "../components/BookButton";
 import Social from "../components/Social";
@@ -48,8 +52,18 @@ export default function Home() {
         }
       }
       window.addEventListener('scroll', changeShow);
+
+      const [width, setWidth] = React.useState(window.innerWidth);
+      const breakpoint = 520;
+    
+      React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+    
+        // // Return a function from the effect that removes the event listener
+        // return () => window.removeEventListener("resize", handleWindowResize);
+      }, []);
     return (
-        // <AnimateSharedLayout type='crossfade'>
         <AnimatePresence>
             <>
             <motion.main 
@@ -64,25 +78,33 @@ export default function Home() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="grid grid-rows-2 z-40">
-                    <motion.div className="z-50">
+                className="md:grid md:grid-rows-2">
+                    <motion.div>
                       <LazyLoadComponent>
+                        <div className="z-50">
             <ScrollToTop/>
+            </div>
             </LazyLoadComponent>
             </motion.div>
               <section
-                style={{backgroundImage: `url(${Hero1})`}}
-                className='w-full h-full flex flex-wrap absolute'>
-             <div className={show ? "invisible navi" : "navi z-30"}> 
+                className='flex flex-wrap absolute '>
+             <div className={show ? "invisible navi " : "w-full h-full navi z-50"}> 
                <Navbar text="Lemon Grove"/> 
                </div> 
-              <div className="heroContainer items-center justify-center md:flex flex-wrap">
-                <Hero1 className="w-screen h-[10rem] z-10 overflow-hidden"/>
-                <div className="top-2/4 right-2/4 left-2/4">
+              <div className="md:items-center md:justify-center md:flex md:flex-wrap">
+                <div className="h-screen w-screen event-hero bg-fixed">
+                  
+                  {/* <div className="invisible md:visible">
+                  <Image
+                  srcSet={heroWeb}
+                  fallback={hero}
+                  className=""/></div> */}
+                  </div>
+                <div className="">
                     <BookButton />
                 </div>
-                <div className="top-[7rem] h-1/2 md:left-[14rem] z-20 absolute ">
-                <HeroText />
+                <div className="top-[6rem] -left-[9.6rem] md:top-[7rem] md:h-1/2 md:left-[14rem] z-20 absolute">
+                  {width < breakpoint ? <HeroTextMobile/> : <HeroText/>};
                 </div>
                 <div className="z-20 fixed">
                     <Social />
@@ -101,6 +123,5 @@ export default function Home() {
               </motion.main>
           </>               
       </AnimatePresence>
-    // </AnimateSharedLayout>
     );
 };

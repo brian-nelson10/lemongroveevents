@@ -315,7 +315,7 @@ const Contact = () => {
                                                     <label className="checkbox4">
                                                         <input
                                                             type="checkbox"
-                                                            value="Add On's"
+                                                            value="Celebrate"
                                                             name="package"
                                                             checked={isAddOns}
                                                             onChange={handleAddOns} />

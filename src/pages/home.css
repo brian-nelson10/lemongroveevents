@@ -51,6 +51,19 @@
   background-repeat: no-repeat;
 }
 
+.event-hero {
+  background-image: url('../assets/images/event.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% top;
+}
+
+@media screen and (max-width: 760px) {
+  .event-hero {
+  background-position: 55% top;
+  background-size: 80rem;
+  }
+}
+
 .event-head {
   background-image: url('../assets/images/floralResize.png');
   background-repeat: no-repeat;
@@ -92,3 +105,4 @@
   background-position: 0 210%;
   background-size: cover;
 }
+

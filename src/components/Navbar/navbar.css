@@ -68,3 +68,10 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.mobile-img {
+    background-image: url('../../assets/images/floral.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }

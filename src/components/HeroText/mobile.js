@@ -19,7 +19,7 @@ export default function HeroText() {
     return (
         <>
 <motion.svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-    className="w-[900pt] h-[700pt] z-30"
+    className="w-[480pt] h-[280pt]"
   viewBox="0 0 1300.000000 1200.000000"
  preserveAspectRatio="xMidYMid meet">
 

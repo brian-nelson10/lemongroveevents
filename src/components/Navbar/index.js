@@ -52,7 +52,22 @@ export default function Navbar({ text }) {
   window.addEventListener('scroll', changeColor)
 
   const letters = Array.from(text);
-
+  const menuVariants = {
+    opened: {
+      top: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.5,
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+        
+      },
+    },
+    closed: {
+      top: "-190vh",
+    },
+  };
   const dropDown = {
     opened: {
       backgroundColor: "transparent",
@@ -266,7 +281,7 @@ export default function Navbar({ text }) {
   }
   return (
     <>
-      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white opacity-[80%] fixed flex flex-wrap w-screen -mt-6 p-1 pt-2 z-50 hover:cursor-pointer md:p-4' : 'navbar z-60 bg-transparent fixed md:flex md:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer md:p-4'}>
+      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white opacity-[80%] h-[4.5rem] md:h-[5.5rem] fixed flex flex-wrap -mt-6 p-1 pt-2 z-50 hover:cursor-pointer md:p-4' : 'navbar z-60 bg-transparent fixed md:flex md:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer md:p-4'}>
         <div className="grid grid-cols-3 w-[26rem] md:w-screen my-2">
           <motion.div
             layout
@@ -321,21 +336,21 @@ export default function Navbar({ text }) {
                     initial="hidden"
                     animate="visible">
                     <motion.line className="line top" animate={isOpen ? "opened" : "closed"}
-                      initial={false} variants={lineTop} transition={{ type: "spring", stiffness: 260, damping: 20 }} x1="16" x2="76" y1="26" y2="26" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterLimit="10" strokeWidth="2" />
+                      initial={false} variants={lineTop} transition={{ type: "spring", stiffness: 260, damping: 20 }} x1="16" x2="76" y1="26" y2="26" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" />
                   </motion.g>
                   <motion.g
                     variants={child2}
                     initial="hidden"
                     animate="visible">
                     <motion.line className="line middle" animate={isOpen ? "opened" : "closed"}
-                      initial={false} variants={lineMiddle} transition={{ type: "spring", stiffness: 260, damping: 20 }} x1="16" x2="76" y1="36" y2="36" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterLimit="10" strokeWidth="2" />
+                      initial={false} variants={lineMiddle} transition={{ type: "spring", stiffness: 260, damping: 20 }} x1="16" x2="76" y1="36" y2="36" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" />
                   </motion.g>
                   <motion.g
                     variants={child1}
                     initial="hidden"
                     animate="visible">
                     <motion.line className="line bottom" animate={isOpen ? "opened" : "closed"}
-                      initial={false} variants={lineBottom} transition={{ type: "spring", stiffness: 260, damping: 20 }} x1="16" x2="76" y1="46" y2="46" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterLimit="10" strokeWidth="2" />
+                      initial={false} variants={lineBottom} transition={{ type: "spring", stiffness: 260, damping: 20 }} x1="16" x2="76" y1="46" y2="46" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2" />
                   </motion.g>
                 </motion.g>
               </motion.svg>
@@ -367,8 +382,24 @@ export default function Navbar({ text }) {
         </div>
 
       </motion.nav>
+      
+    <motion.nav
+      className="visible md:invisible bg-black h-screen w-screen fixed flex flex-col items-center justify-center align-center z-60 mobile-img"
+      initial={false}
+      variants={menuVariants}
+      animate={isOpen ? "opened" : "closed"}
+    >
+        <motion.li onClick={handleHome} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>home</motion.li>
+        <motion.li onClick={handleNavigate} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>Book Online</motion.li>
+        <motion.li onClick={handlePackage} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>date</motion.li>
+        <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>event</motion.li>
+        <motion.li onClick={handlePackageThree} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>i do</motion.li>
+        <motion.li onClick={handlePackageFour} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>celebrate</motion.li>
+        <motion.li onClick={handleAddOns} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>Add On's</motion.li>
+      </motion.nav>
+      
       <motion.nav
-        className="h-0 w-screen fixed right-0 flex flex-col items-center justify-center align-center z-60"
+        className="h-0 w-screen fixed right-0 flex flex-col items-center justify-center align-center z-60 invisible md:visible"
         initial={false}
         animate={isOpen ? "opened" : "closed"}
       >
@@ -384,7 +415,7 @@ export default function Navbar({ text }) {
               <label htmlFor="subject" className="block mb-2 font-roboto font-bold text-lg text-[#283845]">Subject</label>
               <input type="text" name="subject" id="subject" className="bg-[#283845] border border-gray-300 text-[#efe5dc] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 placeholder:font-roboto placeholder:font-bold" placeholder="Let us know how we can help you" required />
             </div>
-            <div class="mb-6">
+            <div className="mb-6">
               <label htmlFor="message" className="block mb-2 font-roboto font-bold text-lg text-whited">Your message</label>
               <textarea id="message" name="message" rows="4" className="block p-2.5 w-full text-sm text-[#efe5dc] bg-[#283845] rounded-lg border placeholder:font-roboto placeholder:font-bold" placeholder="Your message..."></textarea>
             </div>

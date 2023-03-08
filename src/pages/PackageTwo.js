@@ -83,7 +83,7 @@ const PackageTwo= () => {
             animate="animate"
             exit="exit"
             className="mx-[1rem] md:mx-[2rem] mt-[7rem] -mb-[16rem] z-40">
-        <section className="grid grid-cols-2 md:mx-[2rem] flex items-center h-[30%] w-vw md:w-vw mb-10 bg-fixed rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] event-head">
+        <section className="grid grid-cols-2 -mx-3 md:mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] event-head">
   <motion.div 
     variants={pack}
     initial="initial"
@@ -94,7 +94,7 @@ const PackageTwo= () => {
 </section>
 <section>
 <section className="mb-32 text-[#283845]">
-<div className="container mx-auto text-center rounded-lg bg-center bg-fixed invisible md:visible event-img">
+<div className="container mx-auto text-center rounded-lg bg-center bg-fixed md:visible event-img">
   <div className="grid lg:grid-cols-3 flex items-center">
     <div className="mb-12 lg:mb-0">
    
@@ -150,10 +150,6 @@ const PackageTwo= () => {
         srcset={mobileWeb} 
         fallback={mobile}
         />
-      {/* <div
-        className="w-full col-span-2 rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] event-img"
-        alt=""
-      /> */}
     </div>
   </div>
 </div>
