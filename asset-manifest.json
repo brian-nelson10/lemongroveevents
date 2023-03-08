@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lemongroveevents/static/css/main.51d6b86e.css",
-    "main.js": "/lemongroveevents/static/js/main.10db2f49.js",
+    "main.css": "/lemongroveevents/static/css/main.53e1e05f.css",
+    "main.js": "/lemongroveevents/static/js/main.2bb8b680.js",
     "static/media/date.jpg": "/lemongroveevents/static/media/date.466cc843fea1bab6abfd.jpg",
     "static/media/grazer.webp": "/lemongroveevents/static/media/grazer.64703bb4048f2efd0c5a.webp",
     "static/media/event.jpg": "/lemongroveevents/static/media/event.a8a61436fd7f019d3347.jpg",
@@ -12,6 +12,7 @@
     "static/media/lemonWhole.webp": "/lemongroveevents/static/media/lemonWhole.be019783bdb901d5477a.webp",
     "static/media/hotel.png": "/lemongroveevents/static/media/hotel.64ae8a8b3b93f8f0f40d.png",
     "static/media/floralResize.png": "/lemongroveevents/static/media/floralResize.2a5be1f626a9ea37d905.png",
+    "static/media/marry.webp": "/lemongroveevents/static/media/marry.84e828410e78317a1201.webp",
     "static/media/date.webp": "/lemongroveevents/static/media/date.76cfe668a832995a4a58.webp",
     "static/media/lemonbw2.png": "/lemongroveevents/static/media/lemonbw2.decb4143b4ad6e69b075.png",
     "static/media/event.webp": "/lemongroveevents/static/media/event.aa04a9e66dd33e955c17.webp",
@@ -27,6 +28,7 @@
     "static/media/hotel2.png": "/lemongroveevents/static/media/hotel2.90a84de2acaceb52fcfe.png",
     "static/media/flower.png": "/lemongroveevents/static/media/flower.21343cf19292d8925c41.png",
     "static/media/champagne.webp": "/lemongroveevents/static/media/champagne.dd01a77e474a6698ff68.webp",
+    "static/media/hotel2.webp": "/lemongroveevents/static/media/hotel2.a9bf0f38c2dffcad1732.webp",
     "static/media/Roboto-Thin.ttf": "/lemongroveevents/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
     "static/media/lemonbw3.png": "/lemongroveevents/static/media/lemonbw3.7d371fe18052f4f27da3.png",
     "static/media/Larissa.ttf": "/lemongroveevents/static/media/Larissa.a7996dca4fba4399bf54.ttf",
@@ -37,11 +39,11 @@
     "index.html": "/lemongroveevents/index.html",
     "static/media/social-media-arrow.svg": "/lemongroveevents/static/media/social-media-arrow.ecc0133cf2e7911d4b7286c107f982ec.svg",
     "static/media/arrow.svg": "/lemongroveevents/static/media/arrow.fdab8e6c7e36d62fa8e3bc6d0fef3d26.svg",
-    "main.51d6b86e.css.map": "/lemongroveevents/static/css/main.51d6b86e.css.map",
-    "main.10db2f49.js.map": "/lemongroveevents/static/js/main.10db2f49.js.map"
+    "main.53e1e05f.css.map": "/lemongroveevents/static/css/main.53e1e05f.css.map",
+    "main.2bb8b680.js.map": "/lemongroveevents/static/js/main.2bb8b680.js.map"
   },
   "entrypoints": [
-    "static/css/main.51d6b86e.css",
-    "static/js/main.10db2f49.js"
+    "static/css/main.53e1e05f.css",
+    "static/js/main.2bb8b680.js"
   ]
 }
