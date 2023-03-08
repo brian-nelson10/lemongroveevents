@@ -14,7 +14,7 @@ function handlePackageDetails() {
     navigate("/celebrate");
 }
 const [width, setWidth] = React.useState(window.innerWidth);
-const breakpoint = 520;
+const breakpoint = 1025;
 
 React.useEffect(() => {
   const handleWindowResize = () => setWidth(window.innerWidth)
@@ -27,7 +27,9 @@ React.useEffect(() => {
         <>
         <br/><br/>
         {width < breakpoint ? 
-            <section className="container flex ml-20 mx-auto w-screen textImage right parallax-elements-anim">
+          <SectionFiveMobile/>  
+        : 
+        <section className="container flex ml-20 mx-auto w-screen textImage right parallax-elements-anim">
                     <div className="grid grid-cols-2 w-full gap-6 items-center justify-center">
                         <div className="grid-cols-1 gap-4 ml-[4rem] justify-start items-start text-start col-md-6 col-lg-5 offset-lg-1 textImage__content parallax-text">
                             <div className="font-larissa text-[#283845] text-[80px] ml-2 -mb-4">Celebrate.</div>
@@ -56,8 +58,7 @@ React.useEffect(() => {
                             </motion.div>
                         </div>
                 </div>
-        </section>
-        : <SectionFiveMobile/>}
+        </section>}
                 </>
                 )
 };

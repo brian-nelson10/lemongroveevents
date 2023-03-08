@@ -67,7 +67,7 @@ const Contact = () => {
                     variants={pack}
                     initial="initial"
                     whileInView="animate"
-                    className="p-5 font-larissa text-[5rem] text-white tracking-wide">
+                    className="p-5 font-larissa text-[4.5rem] xl:text-[5rem] text-white tracking-wide">
                     Book Online
                 </motion.div>
                 <motion.div

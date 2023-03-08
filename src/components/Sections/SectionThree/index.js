@@ -13,7 +13,7 @@ function handlePackageDetails() {
     navigate("/event");
 }
 const [width, setWidth] = React.useState(window.innerWidth);
-const breakpoint = 520;
+const breakpoint = 1025;
 
 React.useEffect(() => {
   const handleWindowResize = () => setWidth(window.innerWidth)
@@ -26,7 +26,10 @@ React.useEffect(() => {
         <>
         <br/><br/>
         {width < breakpoint ?  
-            <section className="container flex sm:items-center md:ml-20 ml-14 md:mt-1 w-screen">
+            
+        <SectionThreeMobile/>
+        : 
+        <section className="container flex sm:items-center md:ml-20 ml-14 md:mt-1 w-screen">
                     <div className="grid grid-cols-2 w-full gap-4 items-center justify-center">
                         <div className="grid-cols-1 gap-4 ml-[4rem] justify-start items-start text-start col-md-6 col-lg-5 offset-lg-1 textImage__content parallax-text">
                             <div className="font-larissa text-[#283845] text-[50px] md:text-[100px] ml-2 -mb-4 md:ml-2">Event.</div>
@@ -50,8 +53,7 @@ React.useEffect(() => {
                             </motion.div>
                         </div>
                 </div>
-        </section>
-        : <SectionThreeMobile/> };
+        </section> };
                 </>
                 )
 };

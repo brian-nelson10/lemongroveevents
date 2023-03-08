@@ -14,7 +14,7 @@ const SectionFour = () => {
         navigate("/ido");
     }
     const [width, setWidth] = React.useState(window.innerWidth);
-const breakpoint = 520;
+const breakpoint = 1025;
 
 React.useEffect(() => {
   const handleWindowResize = () => setWidth(window.innerWidth)
@@ -27,7 +27,9 @@ React.useEffect(() => {
         <>
         <br/><br/>
         {width < breakpoint ?  
-            <section className="container flex ml-20 mx-auto w-screen textImage right parallax-elements-anim">
+         <SectionFourMobile/>   
+       : 
+       <section className="container flex ml-20 mx-auto w-screen textImage right parallax-elements-anim">
                     <div className="grid grid-cols-2 w-full gap-4 items-center justify-center">
                         <div className="mb-4 pl-8 justify-center items-center">
                             <motion.div className="zoomin frame flex flex-wrap container ml-[4rem] justify-center items-center">
@@ -55,8 +57,7 @@ React.useEffect(() => {
                             </div>
                     </div>
                 </div>
-        </section>
-       : <SectionFourMobile/> };
+        </section> };
                 </>
                 )
 };
