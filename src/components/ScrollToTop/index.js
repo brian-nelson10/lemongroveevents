@@ -45,7 +45,7 @@ return (
       onClick={() => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
       }}
-      className="fixed bottom-[40px] inline-block right-20 md:-right-5 bg-transparent h-[8%] w-[8%] hover:cursor-pointer"
+      className="fixed bottom-[40px] inline-block right-[1.5rem] lg:-right-5 bg-transparent h-[8%] w-[8%] hover:cursor-pointer"
       src={Arrow} alt="arrow"/>
       </div>
   </>

@@ -281,17 +281,18 @@ export default function Navbar({ text }) {
   }
   return (
     <>
-      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white opacity-[80%] h-[4.5rem] md:h-[5.5rem] fixed flex flex-wrap -mt-6 p-1 pt-2 z-50 hover:cursor-pointer md:p-4' : 'navbar z-60 bg-transparent fixed md:flex md:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer md:p-4'}>
-        <div className="grid grid-cols-3 w-[26rem] md:w-screen my-2">
+      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white w-screen opacity-[80%] h-[4.5rem] xl:h-[5.5rem] fixed flex flex-wrap -mt-6 p-1 pt-2 hover:cursor-pointer xl:p-4' : 'navbar z-60 bg-transparent w-screen fixed xl:flex xl:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer xl:p-4'}>
+        <div className="grid grid-cols-3 w-screen my-2">
           <motion.div
             layout
-            className="text-xl justify-start text-start items-center pl-4 pt-5 md:text-4xl"
+            className="text-xl justify-start text-start items-center xl:pl-4 pt-5 xl:text-4xl hover:cursor-pointer"
             variants={container}
             initial="hidden"
             animate="visible"
+            onClick={handleHome}
           >
             {letters.map((letter, index) => (
-              <motion.span className="font-larissa text-black hover:text-[#d6d6d6]" variants={child} key={index} >
+              <motion.span className="font-larissa text-black hover:text-[#d6d6d6] hover:cursor-pointer " variants={child} key={index} >
                 {letter === " " ? "\u00A0" : letter}
               </motion.span>
             ))}
@@ -299,7 +300,7 @@ export default function Navbar({ text }) {
           <motion.div
             layout
             variants={links}
-            className="invisible md:visible font-larissa text-black text-center text-xl items-center pt-6 justify-center md:text-3xl">
+            className="invisible xl:visible font-larissa text-black text-center text-xl items-center pt-6 justify-center xl:text-3xl">
             <motion.span onClick={handleHome} className="mx-4 links">Home</motion.span>
             <motion.button
               onClick={() => setIsHover(!isHover)}
@@ -307,14 +308,14 @@ export default function Navbar({ text }) {
             >Packages</motion.button>
             <motion.span onClick={handleNavigate} className="mx-4 links">Book Online</motion.span>
           </motion.div>
-          <motion.div className="flex-row container-fluid span-col-2 flex md:flex-wrap justify-end md:pr-6">
+          <motion.div className="flex-row container-fluid span-col-2 flex xl:flex-wrap justify-end xl:pr-6">
             <motion.div
               variants={links}
-              className={isOpen ? "invisible" : "font-larissa text-xs mt-7 md:text-[1.5rem] md:mt-7 md:mr-4"}>305-894-0900</motion.div>
+              className={isOpen ? "invisible" : "font-larissa text-xs mt-7 -ml-4 xl:ml-0 xl:text-[1.5rem] xl:mt-7 xl:mr-4"}>305-894-0900</motion.div>
             <motion.div
               layout
               //   variants={iconVariants}
-              className="md:container-fluid md:pr-6"
+              className="xl:container-fluid xl:pr-6"
               animate={isOpen ? "opened" : "closed"}
               whileHover={{ scale: 1.1 }}
               onClick={() => setIsOpen(!isOpen)}
@@ -358,7 +359,7 @@ export default function Navbar({ text }) {
           </motion.div>
 
         </div>
-        <div className="container invisible md:visible mx-auto h-0">
+        <div className="container invisible xl:visible mx-auto h-0">
           
           <motion.div layout variants={dropDown} initial={false} animate={isHover ? "opened" : "closed"} id="package" style={drop} className="ml-[39rem] relative z-70 bg-transparent divide-y divide-gray-100 text-center rounded-lg shadow-black shadow-sm w-44">
             <ul className="py-2 mt-2 text-sm ">
@@ -384,12 +385,12 @@ export default function Navbar({ text }) {
       </motion.nav>
       
     <motion.nav
-      className="visible md:invisible bg-black h-screen w-screen fixed flex flex-col items-center justify-center align-center z-60 mobile-img"
+      className="visible xl:invisible h-screen w-screen fixed flex flex-col items-center justify-center align-center z-60 mobile-img"
       initial={false}
       variants={menuVariants}
       animate={isOpen ? "opened" : "closed"}
     >
-        <motion.li onClick={handleHome} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>home</motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mt-24 mb-5 text-[3rem] list-none" variants={linkVariants}>home</motion.li>
         <motion.li onClick={handleNavigate} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>Book Online</motion.li>
         <motion.li onClick={handlePackage} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>date</motion.li>
         <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-5 text-[3rem] list-none" variants={linkVariants}>event</motion.li>
@@ -399,7 +400,7 @@ export default function Navbar({ text }) {
       </motion.nav>
       
       <motion.nav
-        className="h-0 w-screen fixed right-0 flex flex-col items-center justify-center align-center z-60 invisible md:visible"
+        className="h-0 w-screen fixed right-0 flex flex-col items-center justify-center align-center z-60 invisible xl:visible"
         initial={false}
         animate={isOpen ? "opened" : "closed"}
       >

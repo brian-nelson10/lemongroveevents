@@ -19,8 +19,8 @@ export default function HeroText() {
     return (
         <>
 <motion.svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-    className="w-[480pt] h-[280pt]"
-  viewBox="0 0 1300.000000 1200.000000"
+    className="w-[480pt] h-[280pt] justify-center items-center ml-[8.5rem] w-screen"
+  viewBox="0 0 1450.000000 900.000000"
  preserveAspectRatio="xMidYMid meet">
 
 <motion.g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)"

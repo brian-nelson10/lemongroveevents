@@ -54,7 +54,7 @@ export default function Home() {
       window.addEventListener('scroll', changeShow);
 
       const [width, setWidth] = React.useState(window.innerWidth);
-      const breakpoint = 520;
+      const breakpoint = 1250;
     
       React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
@@ -78,7 +78,7 @@ export default function Home() {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="md:grid md:grid-rows-2">
+                className="xl:grid xl:grid-rows-2">
                     <motion.div>
                       <LazyLoadComponent>
                         <div className="z-50">
@@ -91,10 +91,10 @@ export default function Home() {
              <div className={show ? "invisible navi " : "w-full h-full navi z-50"}> 
                <Navbar text="Lemon Grove"/> 
                </div> 
-              <div className="md:items-center md:justify-center md:flex md:flex-wrap">
+              <div className="xl:items-center xl:justify-center xl:flex xl:flex-wrap">
                 <div className="h-screen w-screen event-hero bg-fixed">
                   
-                  {/* <div className="invisible md:visible">
+                  {/* <div className="invisible xl:visible">
                   <Image
                   srcSet={heroWeb}
                   fallback={hero}
@@ -103,7 +103,7 @@ export default function Home() {
                 <div className="">
                     <BookButton />
                 </div>
-                <div className="top-[6rem] -left-[9.6rem] md:top-[7rem] md:h-1/2 md:left-[14rem] z-20 absolute">
+                <div className="top-[6rem] -left-[9.6rem] md:-left-[13rem] md:top-[17rem] lg:top-[17rem] xl:top-[7rem] xl:h-1/2 xl:left-[14rem] z-20 absolute">
                   {width < breakpoint ? <HeroTextMobile/> : <HeroText/>};
                 </div>
                 <div className="z-20 fixed">

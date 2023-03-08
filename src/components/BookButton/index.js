@@ -85,7 +85,7 @@ const BookButton = () => {
         initial="initial"
         animate="animate"
         className="absolute z-40 pt-6 upload-button hover:cursor-pointer justify-center bg-black items-center grid top-96 right-2/4 left-2/4 ml-12">
-      <div className="wrapper mr-[9rem] overflow-hidden cursor-pointer rounded-lg relative items-center justify-center" onClick={() => !isAnimating && animate()}>
+      <div className="wrapper mr-[5.5rem] md:mr-[14rem] lg:mr-[18rem] xl:mr-[8rem] overflow-hidden cursor-pointer rounded-lg relative items-center justify-center" onClick={() => !isAnimating && animate()}>
         <motion.div 
           className="container1 bg-black z-10 top-0 cursor-pointer text-white"
           animate={uploadControls}

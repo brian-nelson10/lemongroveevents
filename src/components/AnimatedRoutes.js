@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Home from '../pages/Home';
-import Test from '../pages/Test';
 import { AnimatePresence } from 'framer-motion';
+import Home from '../pages/Home';
 import Book from "../pages/Book";
 import PackageOne from "../pages/PackageOne";
 import PackageTwo from "../pages/PackageTwo";
@@ -54,14 +53,8 @@ function AnimatedRoutes() {
                 path="/success"
                 element={<Success/>}
                 />
-                <Route 
-                path="/Test"
-                element={<Test/>}
-                />
           </Routes>
-         
           </AnimatePresence>
-    )
-}
-
+    );
+};
 export default AnimatedRoutes;

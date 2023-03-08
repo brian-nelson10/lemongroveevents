@@ -72,9 +72,9 @@ const Book = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="mx-[2rem] mt-[7rem] z-40">
+            className="mx-[1rem] lg:mx-[2rem] mt-[7rem] z-40">
                 
-        <section className="grid grid-cols-2 mx-[2rem] flex items-center h-[30%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-vw mb-20 bg-fixed bg-center bg-cover rounded-sm book-img"
+        <section className="grid grid-cols-2 -mx-3 xl:mx-[2rem] flex items-center h-[30%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-vw mb-20 bg-fixed bg-center bg-cover rounded-sm book-img"
 >
 
   <motion.div 
@@ -86,8 +86,8 @@ const Book = () => {
   </motion.div>
  
 </section>
-<section className="grid grid-cols-3 gap-4 mx-[5rem]">
-<div>
+<section className="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:mx-[5rem]">
+<div className="lg:visible invisible">
     <Image
             srcset={img3Web}
             fallback={img3}
