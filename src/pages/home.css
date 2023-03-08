@@ -54,13 +54,13 @@
 .event-hero {
   background-image: url('../assets/images/event.jpg');
   background-repeat: no-repeat;
-  background-position: 50% top;
+  background-position: 51% top;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1260px) {
   .event-hero {
-  background-position: 55% top;
-  background-size: 80rem;
+  background-position: 50% top;
+  background-size: 78rem;
   }
 }
 

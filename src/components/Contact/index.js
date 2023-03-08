@@ -60,8 +60,8 @@ const Contact = () => {
         e.preventDefault();
         emailjs.sendForm('service_b1dblxj', 'template_6bq4mri', form.current, 'a6ADH15ktmshf56k_')};
     return (
-        <div className="container contactBody mt-[18rem] mb-[80px] w-max ">
-            <section className="container shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] contactImg relative mx-auto items-center justify-center text-center h-[20rem] w-max ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50"
+        <div className="container contactBody mt-[18rem] mb-[80px] w-screen xl:w-max ">
+            <section className="container shadow-[1px_35px_35px_2px_rgba(0,0,0,0.5)] contactImg relative items-center justify-center text-center h-[20rem] xl:w-max ml-[2rem] xl:ml-[9rem] bg-fixed bg-center bg-cover rounded-xl z-50"
             >
                 <motion.div
                     variants={pack}

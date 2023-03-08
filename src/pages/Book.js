@@ -62,6 +62,16 @@ const Book = () => {
       }
     }
     window.addEventListener('scroll', changeColor)
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 1250;
+  
+    React.useEffect(() => {
+      const handleWindowResize = () => setWidth(window.innerWidth)
+      window.addEventListener("resize", handleWindowResize);
+  
+      // // Return a function from the effect that removes the event listener
+      // return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
     return (
         <>
         <div className={color ? "z-50 fixed top-0 transition-ease hidden" : "z-50 fixed top-0 transition-ease visible"}>
@@ -74,20 +84,38 @@ const Book = () => {
             exit="exit"
             className="mx-[1rem] lg:mx-[2rem] mt-[7rem] z-40">
                 
-        <section className="grid grid-cols-2 -mx-3 xl:mx-[2rem] flex items-center h-[30%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-vw mb-20 bg-fixed bg-center bg-cover rounded-sm book-img"
+        <section className="grid grid-cols-2 -mx-3 xl:mx-[2rem] flex items-center h-[30%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-vw mb-10 bg-fixed bg-center bg-cover rounded-sm book-img"
 >
 
   <motion.div 
     variants={head}
     initial="initial"
     whileInView="animate"
-    className="p-5 font-larissa pt-11 text-[1.8rem] h-[7.5rem] text-white ">
+    className="p-5 items-center justify-start font-larissa pt-11 text-[1.4rem] xl:text-[1.8rem] h-[7.5rem] text-white ">
   Book Online
   </motion.div>
  
 </section>
-<section className="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:mx-[5rem]">
-<div className="lg:visible invisible">
+{width > breakpoint ?  
+    <section className="grid grid-cols-2 gap-4 ">
+    <div className="mt-2">
+    <Image
+            srcset={img2Web}
+            fallback={img2}
+            />
+    </div>
+    <div>
+    <Image
+            srcset={img3Web}
+            fallback={img3}
+            />
+       
+    </div>    
+</section>
+
+:
+<section className="grid grid-cols-3 gap-4 xl:mx-[5rem]">
+<div className="">
     <Image
             srcset={img3Web}
             fallback={img3}
@@ -107,16 +135,17 @@ const Book = () => {
             />
        
     </div>    
-</section>
+</section> }
+
 <hr className="mt-10"/>
 <section>
 </section>
-<section className="grid -mt-[14rem] -ml-[3rem] mb-[9rem] z-50">
-    <div className=" z-50" >
+<section className="grid -mt-[14rem] -ml-[3rem] mb-[40rem] xl:mb-[9rem] z-50">
+    <div className=" z-30" >
     <Contact />
     </div>
     <br/>
-    <div className="grid z-40" >
+    <div className="grid mt-[21rem] xl:mt-0 z-40" >
     <Lemon />
     </div>
 </section>
