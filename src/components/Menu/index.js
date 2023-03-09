@@ -117,7 +117,7 @@ const Menu = () => {
                         </div>
 
                         <div className="mb-6 -mt-[2rem] lg:mb-0">
-                            <div className="block rounded-lg shadow-lg bg-white h-[40rem] border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
+                            <div className="block rounded-lg shadow-lg bg-white h-[44rem] xl:h-[40rem] border-spacing-[3rem] border-seperate border-2 border-solid border-[#afafa5]">
                                 <div className="p-6 border-b border-gray-300 text-center">
                                     <p className="uppercase font-larissa tracking-widest mb-4 text-lg">
                                         <strong>I do.</strong>

@@ -150,23 +150,13 @@ whileInView="onscreen">
 </motion.section>
 </LazyLoadComponent>
 <br/>
-{/* <Lemon2/> */}
-{/* <motion.section
-layout
-variants={content}
-viewport={{ once: true }}
-initial="offscreen"
-whileInView="onscreen"
-className="z-50 mb-[2rem]">
-    <Contact/>
-</motion.section> */}
 <motion.div 
     layout
     variants={content3}
     viewport={{ once: true }}
     initial="offscreen"
     whileInView="onscreen"
-    className="z-10 mt-[8rem] bottom-0">
+    className="z-10 mt-[12rem] xl:mt-[6rem] bottom-0">
  <Footer/>
 </motion.div>
     </>
