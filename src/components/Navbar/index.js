@@ -281,7 +281,7 @@ export default function Navbar({ text }) {
   }
   return (
     <>
-      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white w-screen opacity-[80%] h-[4.5rem] xl:h-[5.5rem] fixed flex flex-wrap -mt-6 p-1 pt-2 hover:cursor-pointer xl:p-4' : 'navbar z-60 bg-transparent w-screen h-[4.5rem] fixed xl:flex xl:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer xl:p-4'}>
+      <motion.nav viewport={{ once: true }} layout className={color ? 'navbar z-60 bg-white w-screen opacity-[80%] h-[4.5rem] xl:h-[5.5rem] fixed flex flex-wrap -mt-6 p-1 pt-2 hover:cursor-pointer xl:p-4' : 'navbar z-60 bg-transparent w-screen h-[1.5rem] fixed xl:flex xl:flex-wrap p-1 pt-2 z-50 hover:cursor-pointer xl:p-4'}>
         <div className="grid grid-cols-3 w-screen my-2">
           <motion.div
             layout
@@ -390,14 +390,14 @@ export default function Navbar({ text }) {
       variants={menuVariants}
       animate={isOpen ? "opened" : "closed"}
     >
-        <motion.li onClick={handleHome} className="text-white font-larissa mt-[4rem] mb-4 text-[3rem] list-none z-60 invisible"></motion.li>
-        <motion.li onClick={handleHome} className="text-white font-larissa mb-4 text-[3rem] list-none z-60" variants={linkVariants}>home</motion.li>
-        <motion.li onClick={handleNavigate} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>Book Online</motion.li>
-        <motion.li onClick={handlePackage} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>date</motion.li>
-        <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>event</motion.li>
-        <motion.li onClick={handlePackageThree} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>i do</motion.li>
-        <motion.li onClick={handlePackageFour} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>celebrate</motion.li>
-        <motion.li onClick={handleAddOns} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>Add On's</motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mt-[4rem] mb-4 text-[3rem] list-none z-60 invisible">home</motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mb-3 text-[3rem] list-none z-60" variants={linkVariants}>home</motion.li>
+        <motion.li onClick={handleNavigate} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>Book Online</motion.li>
+        <motion.li onClick={handlePackage} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>date</motion.li>
+        <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>event</motion.li>
+        <motion.li onClick={handlePackageThree} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>i do</motion.li>
+        <motion.li onClick={handlePackageFour} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>celebrate</motion.li>
+        <motion.li onClick={handleAddOns} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>Add On's</motion.li>
       </motion.nav>
       
       <motion.nav
