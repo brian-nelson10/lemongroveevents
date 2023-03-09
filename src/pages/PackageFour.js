@@ -91,8 +91,8 @@ const PackageFour= () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="mx-[1rem] md:mx-[2rem] mt-[7rem] -mb-[16rem] z-40">
-        <section className="grid grid-cols-2 -mx-3 md:mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] celeb-head">
+            className="mx-[1rem] lg:mx-[2rem] mt-[7rem] -mb-[16rem] z-40">
+        <section className="grid grid-cols-2 -mx-3 lg:mx-[2rem] flex items-center h-[30%] w-vw mb-10 bg-fixed rounded-sm drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] celeb-head">
   <motion.div 
     variants={pack}
     initial="initial"
@@ -108,14 +108,14 @@ const PackageFour= () => {
     <div className="mb-12 lg:mb-0">
    
       <div
-        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
+        className="block rounded-lg shadow-[0_35px_80px_10px_rgba(0,0,1,1)] px-6 py-12 lg:py-6 xl:py-12 lg:px-12 lg:-mr-14"
         style={{ background: "hsla(0, 0%, 100%, 0.55)", backdropFilter: "blur(30px)"}}
       >
-      <h3 className="text-lg md:text-[1.8rem] text-[#283845] font-bold font-roboto mb-6">Give your celebration the extra touch it needs with a special surprise waiting for you.</h3>
+      <h3 className="text-lg lg:text-[1.8rem] text-[#283845] font-bold font-roboto mb-6">Give your celebration the extra touch it needs with a special surprise waiting for you.</h3>
       <h5 className="text-lg mb-1 text-[#283845] font-roboto font-bold tracking-wide ml-1 lg:mb-5 xl:mb-3">Let's make this getaway extra special.</h5>
 <div className="grid grid-cols-3">
     <div className="col-span-3">
-      <p className="font-bold text-end font-larissa text-[3rem] md:text-[4rem] text-[#283845] tracking-widest md:-mt-[1rem] md:-mb-4 justify-start">Celebrate.</p>
+      <p className="font-bold text-end font-larissa text-[3rem] lg:text-[4rem] text-[#283845] tracking-widest lg:-mt-[1rem] lg:-mb-4 justify-start">Celebrate.</p>
       </div>
       </div>
       <ul className="mx-4">
@@ -139,7 +139,7 @@ const PackageFour= () => {
             <p className="font-larissa text-bold text-xl text-[#283845]">Price $ 250.</p>
         </li>
       </ul>
-      <div className="grid md:grid-cols-4 gap-4 z-60">
+      <div className="grid lg:grid-cols-4 gap-4 z-60">
         <div className="grid z-50 text-center ">
             <Button children="Book Now" onClick={handleBook} />
         </div>
@@ -147,7 +147,7 @@ const PackageFour= () => {
       </div> 
     </div>
     {width < breakpoint ?
-    <div className="absolute mr-4 -mb-[16rem] -bottom-[30rem]">
+    <div className="absolute mr-4 mb-[4rem] -bottom-[46rem]">
       <Image
         srcSet={mobileWeb}
         fallback={mobile}
@@ -163,7 +163,7 @@ const PackageFour= () => {
 </div>
 </section>
 </section>
-<section className="grid -mt-[22rem] -ml-[3rem] mb-[52rem] md:mb-[9rem] z-10">
+<section className="grid -mt-[22rem] -ml-[3rem] mb-[52rem] lg:mb-[9rem] z-10">
     <br/>
     <LazyLoadComponent>
     <div className="grid z-40" >
@@ -177,13 +177,13 @@ const PackageFour= () => {
       <svg className="rotate-[90deg] z-60 hover:cursor-pointer" width="36" height="66" viewBox="0 0 26 46" fill="#283845" stroke="#283845" strokeWidth="0" opacity=".9" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.2929 45.7071C7.68342 46.0976 8.31659 46.0976 8.70711 45.7071L15.0711 39.3431C15.4616 38.9526 15.4616 38.3195 15.0711 37.9289C14.6805 37.5384 14.0474 37.5384 13.6569 37.9289L8 43.5858L2.34315 37.9289C1.95263 37.5384 1.31946 37.5384 0.928936 37.9289C0.538412 38.3195 0.538412 38.9526 0.928936 39.3431L7.2929 45.7071ZM7 1.02965e-07L7 45L9 45L9 -1.02965e-07L7 1.02965e-07Z"/>
 </svg>
-<p className="font-larissa font-bold tracking-wide text-md -mt-7 -ml-3 md:opacity-0 group-hover:opacity-100">I do</p>
+<p className="font-larissa font-bold tracking-wide text-md -mt-7 -ml-3 lg:opacity-0 group-hover:opacity-100">I do</p>
       </div>
       <div className="grid col-span-1 flex flex-row mr-[2rem] -mt-[14px] group justify-end" onClick={handleAddOns}>
       <svg className="-rotate-[90deg] z-60 hover:cursor-pointer" width="36" height="66" viewBox="0 0 26 46" fill="#283845" stroke="#283845" strokeWidth="0" opacity=".9" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.2929 45.7071C7.68342 46.0976 8.31659 46.0976 8.70711 45.7071L15.0711 39.3431C15.4616 38.9526 15.4616 38.3195 15.0711 37.9289C14.6805 37.5384 14.0474 37.5384 13.6569 37.9289L8 43.5858L2.34315 37.9289C1.95263 37.5384 1.31946 37.5384 0.928936 37.9289C0.538412 38.3195 0.538412 38.9526 0.928936 39.3431L7.2929 45.7071ZM7 1.02965e-07L7 45L9 45L9 -1.02965e-07L7 1.02965e-07Z"/>
 </svg>
-<div className="font-larissa font-bold tracking-wide text-md md:opacity-0 group-hover:opacity-100">Add On's</div>
+<div className="font-larissa font-bold tracking-wide text-md lg:opacity-0 group-hover:opacity-100">Add On's</div>
       </div>
     </div>
         </motion.main>

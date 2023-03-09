@@ -390,7 +390,8 @@ export default function Navbar({ text }) {
       variants={menuVariants}
       animate={isOpen ? "opened" : "closed"}
     >
-        <motion.li onClick={handleHome} className="text-white font-larissa mt-[4rem] mb-4 text-[3rem] list-none z-60" variants={linkVariants}>home</motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mt-[4rem] mb-4 text-[3rem] list-none z-60 invisible"></motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mb-4 text-[3rem] list-none z-60" variants={linkVariants}>home</motion.li>
         <motion.li onClick={handleNavigate} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>Book Online</motion.li>
         <motion.li onClick={handlePackage} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>date</motion.li>
         <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-4 text-[3rem] list-none" variants={linkVariants}>event</motion.li>
