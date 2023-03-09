@@ -147,8 +147,8 @@ const PackageThree = () => {
                         <p className="font-larissa text-bold text-xl text-[#283845]">Price $ 400.</p>
                       </li>
                     </ul>
-                    <div className="grid lg:grid-cols-4 gap-4 z-60">
-                      <div className="grid z-50 text-center ">
+                    <div className="grid lg:grid-cols-4 gap-4 z-40">
+                      <div className="grid z-40 text-center ">
                         <Button children="Book Now" onClick={handleBook} />
                       </div>
                     </div>
@@ -166,7 +166,7 @@ const PackageThree = () => {
                   className="w-full rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] h-[60rem] bg-fixed ido-img"
                   alt=""
                 />
-                };
+                }
               </div>
             </div>
           </section>

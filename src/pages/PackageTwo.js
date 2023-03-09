@@ -139,7 +139,7 @@ const PackageTwo= () => {
         </li>
       </ul>
       <div className="grid lg:grid-cols-4 gap-4">
-         <div className="grid z-50 text-center "> 
+         <div className="grid z-40 text-center "> 
             <Button children="Book Now" onClick={handleBook} />
          </div> 
       </div>

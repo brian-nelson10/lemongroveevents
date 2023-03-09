@@ -143,7 +143,7 @@ const PackageOne= () => {
         </li>
         
       </ul>
-      <div className="grid lg:grid-cols-4 gap-4 z-60">
+      <div className="grid lg:grid-cols-4 gap-4 z-40">
          <div className="grid z-60 text-center "> 
              <Button children="Book Now" onClick={handleBook} />
          </div>

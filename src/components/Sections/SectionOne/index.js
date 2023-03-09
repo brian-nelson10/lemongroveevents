@@ -156,7 +156,7 @@ whileInView="onscreen">
     viewport={{ once: true }}
     initial="offscreen"
     whileInView="onscreen"
-    className="z-10 mt-[12rem] xl:mt-[6rem] bottom-0">
+    className="z-10 mt-[18rem] xl:mt-[6rem] bottom-0">
  <Footer/>
 </motion.div>
     </>

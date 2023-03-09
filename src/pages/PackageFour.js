@@ -139,8 +139,8 @@ const PackageFour= () => {
             <p className="font-larissa text-bold text-xl text-[#283845]">Price $ 250.</p>
         </li>
       </ul>
-      <div className="grid lg:grid-cols-4 gap-4 z-60">
-        <div className="grid z-50 text-center ">
+      <div className="grid lg:grid-cols-4 gap-4 z-40">
+        <div className="grid z-40 text-center ">
             <Button children="Book Now" onClick={handleBook} />
         </div>
       </div>
