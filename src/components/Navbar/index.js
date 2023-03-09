@@ -390,14 +390,14 @@ export default function Navbar({ text }) {
       variants={menuVariants}
       animate={isOpen ? "opened" : "closed"}
     >
-        <motion.li onClick={handleHome} className="text-white font-larissa mt-[4rem] mb-4 text-[3rem] list-none z-60 invisible">home</motion.li>
-        <motion.li onClick={handleHome} className="text-white font-larissa mb-3 text-[3rem] list-none z-60" variants={linkVariants}>home</motion.li>
-        <motion.li onClick={handleNavigate} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>Book Online</motion.li>
-        <motion.li onClick={handlePackage} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>date</motion.li>
-        <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>event</motion.li>
-        <motion.li onClick={handlePackageThree} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>i do</motion.li>
-        <motion.li onClick={handlePackageFour} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>celebrate</motion.li>
-        <motion.li onClick={handleAddOns} className="text-white font-larissa mb-3 text-[3rem] list-none" variants={linkVariants}>Add On's</motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mt-[4rem] text-[2.8rem] list-none z-60 invisible">home</motion.li>
+        <motion.li onClick={handleHome} className="text-white font-larissa mb-2 text-[2.8rem] list-none z-60" variants={linkVariants}>home</motion.li>
+        <motion.li onClick={handleNavigate} className="text-white font-larissa mb-2 text-[2.8rem] list-none" variants={linkVariants}>Book Online</motion.li>
+        <motion.li onClick={handlePackage} className="text-white font-larissa mb-2 text-[2.8rem] list-none" variants={linkVariants}>date</motion.li>
+        <motion.li onClick={handlePackageTwo} className="text-white font-larissa mb-2 text-[2.8rem] list-none" variants={linkVariants}>event</motion.li>
+        <motion.li onClick={handlePackageThree} className="text-white font-larissa mb-2 text-[2.8rem] list-none" variants={linkVariants}>i do</motion.li>
+        <motion.li onClick={handlePackageFour} className="text-white font-larissa mb-2 text-[2.8rem] list-none" variants={linkVariants}>celebrate</motion.li>
+        <motion.li onClick={handleAddOns} className="text-white font-larissa mb-2 text-[2.8rem] list-none" variants={linkVariants}>Add On's</motion.li>
       </motion.nav>
       
       <motion.nav
