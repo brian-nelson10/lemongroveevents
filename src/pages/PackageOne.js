@@ -151,7 +151,7 @@ const PackageOne= () => {
       </div> 
     </div>
     {width < breakpoint ?
-    <div className="absolute mr-4 mb-[4rem] -bottom-[40rem]">
+    <div className="absolute mr-4 mb-[4rem] -bottom-[46rem]">
     <Image 
         srcset={mobileWeb} 
         fallback={mobile}
