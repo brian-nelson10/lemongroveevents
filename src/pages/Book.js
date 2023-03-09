@@ -96,9 +96,11 @@ const Book = () => {
   </motion.div>
  
 </section>
-{width > breakpoint ?  
-    <section className="grid grid-cols-2 gap-4 ">
-    <div className="mt-2">
+{width < breakpoint ?  
+
+    <section className="grid grid-rows-2 gap-4 ">
+        <div className="font-larissa text-center text-xl">Please Fill Out Form Below.</div>
+    <div className="-mt-[7rem]">
     <Image
             srcset={img2Web}
             fallback={img2}
