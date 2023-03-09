@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lemongroveevents/static/css/main.478b42d8.css",
-    "main.js": "/lemongroveevents/static/js/main.70c26cde.js",
+    "main.css": "/lemongroveevents/static/css/main.f9d9dea3.css",
+    "main.js": "/lemongroveevents/static/js/main.48cfa16d.js",
     "static/media/date.jpg": "/lemongroveevents/static/media/date.466cc843fea1bab6abfd.jpg",
     "static/media/grazer.webp": "/lemongroveevents/static/media/grazer.64703bb4048f2efd0c5a.webp",
     "static/media/event.jpg": "/lemongroveevents/static/media/event.a8a61436fd7f019d3347.jpg",
@@ -39,11 +39,11 @@
     "index.html": "/lemongroveevents/index.html",
     "static/media/social-media-arrow.svg": "/lemongroveevents/static/media/social-media-arrow.ecc0133cf2e7911d4b7286c107f982ec.svg",
     "static/media/arrow.svg": "/lemongroveevents/static/media/arrow.fdab8e6c7e36d62fa8e3bc6d0fef3d26.svg",
-    "main.478b42d8.css.map": "/lemongroveevents/static/css/main.478b42d8.css.map",
-    "main.70c26cde.js.map": "/lemongroveevents/static/js/main.70c26cde.js.map"
+    "main.f9d9dea3.css.map": "/lemongroveevents/static/css/main.f9d9dea3.css.map",
+    "main.48cfa16d.js.map": "/lemongroveevents/static/js/main.48cfa16d.js.map"
   },
   "entrypoints": [
-    "static/css/main.478b42d8.css",
-    "static/js/main.70c26cde.js"
+    "static/css/main.f9d9dea3.css",
+    "static/js/main.48cfa16d.js"
   ]
 }
