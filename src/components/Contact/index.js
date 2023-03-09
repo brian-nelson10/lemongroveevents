@@ -77,8 +77,8 @@ const Contact = () => {
                     className="p-5 -mt-[3rem] font-larissa text-[1.2rem] text-white tracking-wide">
                     We Will Contact You Momentarily To Complete Booking.
                 </motion.div>
-                <div className="container text-gray-800 mt-[6rem] px-4 md:px-12">
-                    <div className="block blocker rounded-lg shadow-xl py-10 md:py-12 px-2 md:px-6 -mt-[100px] bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.3)]">
+                <div className="container text-gray-800 mt-[6rem] px-4 md:px-12 z-60">
+                    <div className="block blocker rounded-lg shadow-xl py-10 md:py-12 px-2 md:px-6 -mt-[100px] bg-[#efe5dc] shadow-[1px_35px_35px_2px_rgba(0,0,0,0.3)] z-60">
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="flex flex-wrap">
                             <div className="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">

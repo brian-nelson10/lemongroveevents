@@ -140,12 +140,12 @@ const Book = () => {
 <hr className="mt-10"/>
 <section>
 </section>
-<section className="grid -mt-[14rem] -ml-[3rem] mb-[40rem] xl:mb-[9rem] z-50">
-    <div className=" z-30" >
+<section className="grid -mt-[14rem] -ml-[3rem] mb-[40rem] xl:mb-[9rem] z-40">
+    <div className=" z-40" >
     <Contact />
     </div>
     <br/>
-    <div className="grid mt-[21rem] xl:mt-0 z-40" >
+    <div className="grid mt-[122rem] -mb-[110rem] xl:mt-0 z-40" >
     <Lemon />
     </div>
 </section>

@@ -32,10 +32,10 @@ const SectionThreeMobile = () => {
                             <div className="text-lg md:text-2xl font-bold font-roboto text-[#283845] justify-end items-end text-end mb-4"><p>Get together for an unforgettable celebration.</p>
                             </div>
                             <div className="md:justify-end md:items-end md:text-end mt-[3rem] -mb-[1.5rem] md:ml-[18rem]">
-                            <div >
+                            <div className="-mr-8">
                             <Button children="Details" onClick={handlePackageDetails} />
                             </div>
-                            <div className="icon w-[170px] h-[170px] justify-end items-end text-end -mt-[6rem] mb-0 ml-12">
+                            <div className="icon w-[170px] h-[170px] justify-end items-end text-end -mt-[6rem] mb-0 ml-8">
                             <Image 
                                 src={iconWeb}
                                 fallback={icon}

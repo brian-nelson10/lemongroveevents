@@ -35,10 +35,10 @@ const SectionFiveMobile = () => {
                             <div className="text-lg ml-10 font-bold font-roboto text-[#283845] justify-start items-start text-center mb-4"><p>for any celebration or romantic getaway.</p>
                             </div>
                             <div className="md:justify-end md:items-end md:text-end mt-[3rem] -mb-[1.5rem] md:ml-[18rem]">
-                            <div className="mr-[4rem]">
+                            <div className="mr-[2rem]">
                             <Button children="Details" onClick={handlePackageDetails} />
                             </div>
-                            <div className="icon w-[200px] h-[180px] justify-end items-end text-end -mt-[6rem] mb-0 ml-6">
+                            <div className="icon w-[200px] h-[180px] justify-end items-end text-end -mt-[6rem] mb-0 ml-2">
                             <Image 
                                 src={iconWeb}
                                 fallback={icon}
