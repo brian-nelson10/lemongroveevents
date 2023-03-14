@@ -8,8 +8,8 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import Image from "../components/Image";
-import mobile from "../assets/images/marry.png";
-import mobileWeb from "../assets/images/web/marry.webp";
+import mobile from "../assets/images/idoResize.png";
+import mobileWeb from "../assets/images/web/ido.webp";
 const main = {
   initial: {
     x: -1000,
